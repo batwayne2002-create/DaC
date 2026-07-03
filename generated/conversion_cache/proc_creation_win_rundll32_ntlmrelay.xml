@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100209" level="10">
+    <description>Suspicious NTLM Authentication on the Printer Spooler Service [Sigma converted]</description>
+  </rule>
+</group>

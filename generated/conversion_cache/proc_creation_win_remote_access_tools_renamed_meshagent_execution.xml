@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100241" level="10">
+    <description>Remote Access Tool - Renamed MeshAgent Execution - Windows [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100258" level="10">
+    <description>Potential SysInternals ProcDump Evasion [Sigma converted]</description>
+  </rule>
+</group>

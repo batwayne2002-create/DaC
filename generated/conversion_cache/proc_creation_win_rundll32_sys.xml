@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100239" level="10">
+    <description>Suspicious Rundll32 Activity Invoking Sys File [Sigma converted]</description>
+  </rule>
+</group>

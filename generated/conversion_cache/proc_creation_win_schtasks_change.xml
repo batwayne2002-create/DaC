@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100206" level="10">
+    <description>Suspicious Modification Of Scheduled Tasks [Sigma converted]</description>
+  </rule>
+</group>

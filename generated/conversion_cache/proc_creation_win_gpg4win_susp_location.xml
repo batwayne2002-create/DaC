@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100229" level="10">
+    <description>File Encryption/Decryption Via Gpg4win From Suspicious Locations [Sigma converted]</description>
+  </rule>
+</group>

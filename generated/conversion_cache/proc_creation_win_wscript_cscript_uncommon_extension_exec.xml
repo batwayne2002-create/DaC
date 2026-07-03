@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100278" level="10">
+    <description>Cscript/Wscript Uncommon Script Extension Execution [Sigma converted]</description>
+  </rule>
+</group>

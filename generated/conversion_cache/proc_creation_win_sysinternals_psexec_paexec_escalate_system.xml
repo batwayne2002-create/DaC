@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100217" level="10">
+    <description>PsExec/PAExec Escalation to LOCAL SYSTEM [Sigma converted]</description>
+  </rule>
+</group>

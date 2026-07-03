@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100211" level="10">
+    <description>PsExec Service Child Process Execution as LOCAL SYSTEM [Sigma converted]</description>
+  </rule>
+</group>

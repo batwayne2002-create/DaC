@@ -1,0 +1,23 @@
+{
+  "rule_name": "MALW_LURK0.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "183653a7232f86e8135eb417b4f2634ca928c9a2ceb297dcee636161127408bd",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"SharedStrings\" in /tmp/tmpabprugp2.yar(64): string \"$m4\" may slow down scanning"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.830901+00:00"
+}

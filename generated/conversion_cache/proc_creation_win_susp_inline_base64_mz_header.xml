@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100200" level="10">
+    <description>Base64 MZ Header In CommandLine [Sigma converted]</description>
+  </rule>
+</group>

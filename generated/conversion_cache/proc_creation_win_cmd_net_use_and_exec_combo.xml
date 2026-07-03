@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100276" level="10">
+    <description>Suspicious File Execution From Internet Hosted WebDav Share [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="10">
+    <description>HackTool - WSASS Execution [Sigma converted]</description>
+  </rule>
+</group>

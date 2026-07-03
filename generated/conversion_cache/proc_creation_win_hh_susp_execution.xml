@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100236" level="10">
+    <description>Suspicious HH.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100219" level="5">
+    <description>MSExchange Transport Agent Installation [Sigma converted]</description>
+  </rule>
+</group>

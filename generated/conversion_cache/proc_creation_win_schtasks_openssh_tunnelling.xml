@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="10">
+    <description>Potential SSH Tunnel Persistence Install Using A Scheduled Task [Sigma converted]</description>
+  </rule>
+</group>

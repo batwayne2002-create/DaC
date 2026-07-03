@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100251" level="5">
+    <description>PowerShell MSI Install via WindowsInstaller COM From Remote Location [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,31 @@
+author: frack113
+custom:
+  wazuh_rule_id: 200583
+date: 2022-12-27
+description: Detects TOKEN OBFUSCATION technique from Invoke-Obfuscation
+detection:
+  condition: selection and not 1 of filter_main_*
+  filter_main_envpath:
+    CommandLine|contains: ${env:path}
+  selection:
+  - CommandLine|re: \w+`(?:\w+|-|.)`[\w+|\s]
+  - CommandLine|re: '"(?:\{\d\})+"\s*-f'
+  - CommandLine|re: (?i)\$\{`?e`?n`?v`?:`?p`?a`?t`?h`?\}
+falsepositives:
+- Unknown
+id: deb9b646-a508-44ee-b7c9-d8965921c6b6
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2026-03-16
+references:
+- https://github.com/danielbohannon/Invoke-Obfuscation
+related:
+- id: f3a98ce4-6164-4dd4-867c-4d83de7eca51
+  type: similar
+status: test
+tags:
+- attack.stealth
+- attack.t1027.009
+title: Powershell Token Obfuscation - Process Creation

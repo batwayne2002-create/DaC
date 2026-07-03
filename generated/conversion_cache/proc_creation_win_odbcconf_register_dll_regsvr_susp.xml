@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100267" level="10">
+    <description>Potentially Suspicious DLL Registered Via Odbcconf.EXE [Sigma converted]</description>
+  </rule>
+</group>

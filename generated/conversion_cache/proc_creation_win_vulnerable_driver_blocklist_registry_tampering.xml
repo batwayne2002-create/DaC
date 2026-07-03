@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100298" level="10">
+    <description>Vulnerable Driver Blocklist Registry Tampering Via CommandLine [Sigma converted]</description>
+  </rule>
+</group>

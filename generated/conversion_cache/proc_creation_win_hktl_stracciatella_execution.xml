@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100257" level="10">
+    <description>HackTool - Stracciatella Execution [Sigma converted]</description>
+  </rule>
+</group>

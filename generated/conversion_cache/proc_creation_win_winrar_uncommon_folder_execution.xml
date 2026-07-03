@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100241" level="5">
+    <description>WinRAR Execution in Non-Standard Folder [Sigma converted]</description>
+  </rule>
+</group>

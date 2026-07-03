@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="5">
+    <description>New Firewall Rule Added Via Netsh.EXE [Sigma converted]</description>
+  </rule>
+</group>

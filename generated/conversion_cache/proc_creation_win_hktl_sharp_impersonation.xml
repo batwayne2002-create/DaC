@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100209" level="10">
+    <description>HackTool - SharpImpersonation Execution [Sigma converted]</description>
+  </rule>
+</group>

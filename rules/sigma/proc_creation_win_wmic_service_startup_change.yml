@@ -1,0 +1,38 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200027
+date: 2026-04-27
+description: 'Detects changes to service startup type to ''disabled'' or ''manual''
+  using the WMIC command-line utility.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains:
+    - Manual
+    - Disabled
+    CommandLine|contains|all:
+    - ' service '
+    - ChangeStartMode
+  selection_img:
+  - Image|endswith: \WMIC.exe
+  - OriginalFileName: wmic.exe
+falsepositives:
+- Legitimate administrative changes to service startup types using WMIC, investigate
+  accordingly.
+id: c0514f28-fdae-42df-b886-06e2b2bc5b37
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://blog.talosintelligence.com/uncovering-qilin-attack-methods-exposed-through-multiple-cases/
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_wmic_service_startup_change/info.yml
+status: experimental
+tags:
+- attack.execution
+- attack.defense-impairment
+- attack.t1047
+- attack.t1685
+title: Service Startup Type Change Via Wmic.EXE

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100218" level="3">
+    <description>Remote Access Tool - ScreenConnect Remote Command Execution [Sigma converted]</description>
+  </rule>
+</group>

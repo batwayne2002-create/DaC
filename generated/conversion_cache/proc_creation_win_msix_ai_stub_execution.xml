@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100220" level="3">
+    <description>Windows MSIX Package Support Framework AI_STUBS Execution [Sigma converted]</description>
+  </rule>
+</group>

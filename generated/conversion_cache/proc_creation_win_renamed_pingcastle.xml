@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100207" level="10">
+    <description>Renamed PingCastle Binary Execution [Sigma converted]</description>
+  </rule>
+</group>

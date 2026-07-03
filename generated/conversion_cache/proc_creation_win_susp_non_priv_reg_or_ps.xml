@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100264" level="10">
+    <description>Non-privileged Usage of Reg or Powershell [Sigma converted]</description>
+  </rule>
+</group>

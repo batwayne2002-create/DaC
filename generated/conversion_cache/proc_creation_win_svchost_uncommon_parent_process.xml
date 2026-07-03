@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100284" level="5">
+    <description>Uncommon Svchost Parent Process [Sigma converted]</description>
+  </rule>
+</group>

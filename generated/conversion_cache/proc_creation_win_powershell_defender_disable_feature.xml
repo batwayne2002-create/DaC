@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100264" level="10">
+    <description>Powershell Defender Disable Scan Feature [Sigma converted]</description>
+  </rule>
+</group>

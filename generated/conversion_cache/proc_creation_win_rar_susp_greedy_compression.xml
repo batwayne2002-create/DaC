@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100283" level="10">
+    <description>Suspicious Greedy Compression Using Rar.EXE [Sigma converted]</description>
+  </rule>
+</group>

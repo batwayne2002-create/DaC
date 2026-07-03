@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100299" level="10">
+    <description>Reg Add Suspicious Paths [Sigma converted]</description>
+  </rule>
+</group>

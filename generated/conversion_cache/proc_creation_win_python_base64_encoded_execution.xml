@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100200" level="10">
+    <description>Python One-Liners with Base64 Decoding [Sigma converted]</description>
+  </rule>
+</group>

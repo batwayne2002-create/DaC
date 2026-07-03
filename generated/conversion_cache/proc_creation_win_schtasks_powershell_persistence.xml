@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100264" level="10">
+    <description>Potential Persistence Via Powershell Search Order Hijacking - Task [Sigma converted]</description>
+  </rule>
+</group>

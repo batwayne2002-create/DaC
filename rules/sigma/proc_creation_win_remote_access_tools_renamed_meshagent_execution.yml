@@ -1,0 +1,45 @@
+author: "Norbert Ja\u015Bniewicz (AlphaSOC)"
+custom:
+  wazuh_rule_id: 200436
+date: 2025-05-19
+description: 'Detects the execution of a renamed instance of the Remote Monitoring
+  and Management (RMM) tool, MeshAgent.
+
+  RMM tools such as MeshAgent are commonly utilized by IT administrators for legitimate
+  remote support and system management.
+
+  However, malicious actors may exploit these tools by renaming them to bypass detection
+  mechanisms, enabling unauthorized access and control over compromised systems.
+
+  '
+detection:
+  condition: selection_meshagent and not 1 of filter_main_*
+  filter_main_legitimate:
+    Image|endswith: \meshagent.exe
+  selection_meshagent:
+  - CommandLine|contains: --meshServiceName
+  - OriginalFileName|contains: meshagent
+falsepositives:
+- Unknown
+id: b471f462-eb0d-4832-be35-28d94bdb4780
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://www.huntress.com/blog/know-thy-enemy-a-novel-november-case-on-persistent-remote-access
+- https://thecyberexpress.com/ukraine-hit-by-meshagent-malware-campaign/
+- https://wazuh.com/blog/how-to-detect-meshagent-with-wazuh/
+- https://www.security.com/threat-intelligence/medusa-ransomware-attacks
+related:
+- id: bd3b5eaa-439d-4a42-8f35-a49f5c8a2582
+  type: similar
+- id: 2fbbe9ff-0afc-470b-bdc0-592198339968
+  type: derived
+status: experimental
+tags:
+- attack.command-and-control
+- attack.stealth
+- attack.t1219.002
+- attack.t1036.003
+title: Remote Access Tool - Renamed MeshAgent Execution - Windows

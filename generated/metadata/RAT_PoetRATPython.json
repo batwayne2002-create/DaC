@@ -1,0 +1,23 @@
+{
+  "rule_name": "RAT_PoetRATPython.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "7c114dcc8fb143ea5901b6ef6ecb60b98d4d42aa8152e45bb32f98de5e1bcaaa",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"PoetRat_Python\" in /tmp/tmp6d9xlha3.yar(13): string \"$grammer_massacre\" may slow down scanning"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:29.883808+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="10">
+    <description>Script Interpreter Execution From Suspicious Folder [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100274" level="10">
+    <description>Suspicious Parent Double Extension File Execution [Sigma converted]</description>
+  </rule>
+</group>

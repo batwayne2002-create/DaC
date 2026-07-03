@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100208" level="10">
+    <description>Windows Defender Definition Files Removed [Sigma converted]</description>
+  </rule>
+</group>

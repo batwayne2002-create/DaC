@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100276" level="10">
+    <description>CMSTP UAC Bypass via COM Object Access [Sigma converted]</description>
+  </rule>
+</group>

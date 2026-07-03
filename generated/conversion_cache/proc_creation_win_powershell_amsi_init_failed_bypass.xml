@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100249" level="10">
+    <description>Potential AMSI Bypass Via .NET Reflection [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100253" level="10">
+    <description>PowerShell Base64 Encoded Reflective Assembly Load [Sigma converted]</description>
+  </rule>
+</group>

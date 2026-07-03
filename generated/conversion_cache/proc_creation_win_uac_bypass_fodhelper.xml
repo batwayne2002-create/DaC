@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100297" level="10">
+    <description>Bypass UAC via Fodhelper.exe [Sigma converted]</description>
+  </rule>
+</group>

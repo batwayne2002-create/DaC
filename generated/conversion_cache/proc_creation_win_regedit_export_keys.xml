@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100250" level="3">
+    <description>Exports Registry Key To a File [Sigma converted]</description>
+  </rule>
+</group>

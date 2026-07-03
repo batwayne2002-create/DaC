@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100251" level="15">
+    <description>HackTool - DInjector PowerShell Cradle Execution [Sigma converted]</description>
+  </rule>
+</group>

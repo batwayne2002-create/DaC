@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100272" level="10">
+    <description>HackTool - TruffleSnout Execution [Sigma converted]</description>
+  </rule>
+</group>

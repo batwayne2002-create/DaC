@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100296" level="5">
+    <description>Arbitrary File Download Via PresentationHost.EXE [Sigma converted]</description>
+  </rule>
+</group>

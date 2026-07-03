@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100235" level="10">
+    <description>Suspicious Download from Office Domain [Sigma converted]</description>
+  </rule>
+</group>

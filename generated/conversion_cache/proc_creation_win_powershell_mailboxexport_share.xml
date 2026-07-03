@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100201" level="15">
+    <description>Suspicious PowerShell Mailbox Export to Share [Sigma converted]</description>
+  </rule>
+</group>

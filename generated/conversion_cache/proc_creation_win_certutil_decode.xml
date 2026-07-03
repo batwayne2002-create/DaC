@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100286" level="10">
+    <description>File Decoded From Base64/Hex Via Certutil.EXE [Sigma converted]</description>
+  </rule>
+</group>

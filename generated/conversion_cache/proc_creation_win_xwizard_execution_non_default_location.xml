@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100290" level="10">
+    <description>Xwizard.EXE Execution From Non-Default Location [Sigma converted]</description>
+  </rule>
+</group>

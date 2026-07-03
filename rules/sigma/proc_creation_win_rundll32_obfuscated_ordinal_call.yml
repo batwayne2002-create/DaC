@@ -1,0 +1,35 @@
+author: Nasreddine Bencherchali (Nextron Systems), Swachchhanda Shrawan Poudel (Nextron
+  Systems)
+custom:
+  wazuh_rule_id: 200380
+date: 2023-05-17
+description: Detects execution of "rundll32" with potential obfuscated ordinal calls
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains:
+    - '#+'
+    - '#-'
+    - '#0'
+    - '#655'
+    - '#656'
+  selection_img:
+  - Image|endswith: \rundll32.exe
+  - OriginalFileName: RUNDLL32.EXE
+  - CommandLine|contains: rundll32
+falsepositives:
+- Unknown
+id: 43fa5350-db63-4b8f-9a01-789a427074e1
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-02-23
+references:
+- Internal Research
+- https://www.youtube.com/watch?v=52tAmVLg1KM&t=2070s
+status: test
+tags:
+- attack.stealth
+- attack.t1027.010
+title: Potential Obfuscated Ordinal Call Via Rundll32

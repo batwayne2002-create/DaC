@@ -1,0 +1,23 @@
+{
+  "rule_name": "MALW_IcedID.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "86aac1fcc640ace1163666e4c87d6bd5601251f7d350eb85a0434d06e7f5dc8e",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"IceID_Bank_trojan\" in /tmp/tmp0iktadp2.yar(18): string \"$magic1\" may slow down scanning"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.921440+00:00"
+}

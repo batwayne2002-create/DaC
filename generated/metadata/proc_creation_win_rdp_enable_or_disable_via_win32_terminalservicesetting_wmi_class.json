@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_rdp_enable_or_disable_via_win32_terminalservicesetting_wmi_class.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "73cbedd348bf351637df3ab875f01dbcf5039c288cc5ba056770ae15bf2c2b81",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:04:46.749311+00:00"
+}

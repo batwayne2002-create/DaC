@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_susp_registry_modification_of_ms_setting_protocol_handler.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "e1dc0999191ebd433e3a27b2e614e64205ab1227b0b2c1cdfa1c1b00b43d3d2d",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:02:57.839514+00:00"
+}

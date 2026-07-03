@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100220" level="5">
+    <description>Potential Reconnaissance Activity Via GatherNetworkInfo.VBS [Sigma converted]</description>
+  </rule>
+</group>

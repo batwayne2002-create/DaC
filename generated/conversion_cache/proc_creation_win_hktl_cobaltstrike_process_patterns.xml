@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100272" level="10">
+    <description>Potential CobaltStrike Process Patterns [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,23 @@
+{
+  "rule_name": "RAT_DarkComet.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "b58ab293105b15ede60620bfc351358bc0a91a920ad5d7790af63f3f45ec6bfd",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"DarkComet_5\" in /tmp/tmp8rc54f2v.yar(123): $data contains .*, .+ or .{x,} consider using .{,N}, .{1,N} or {x,N} with a reasonable value for N"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:29.975958+00:00"
+}

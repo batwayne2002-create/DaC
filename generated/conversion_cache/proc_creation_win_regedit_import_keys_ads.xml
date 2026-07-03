@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="10">
+    <description>Imports Registry Key From an ADS [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100270" level="10">
+    <description>Potential Arbitrary Command Execution Using Msdt.EXE [Sigma converted]</description>
+  </rule>
+</group>

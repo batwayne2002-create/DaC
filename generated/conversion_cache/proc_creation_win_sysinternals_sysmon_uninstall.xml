@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100295" level="10">
+    <description>Uninstall Sysinternals Sysmon [Sigma converted]</description>
+  </rule>
+</group>

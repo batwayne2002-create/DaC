@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100250" level="10">
+    <description>Wab/Wabmig Unusual Parent Or Child Processes [Sigma converted]</description>
+  </rule>
+</group>

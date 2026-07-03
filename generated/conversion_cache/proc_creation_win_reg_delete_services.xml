@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100241" level="10">
+    <description>Service Registry Key Deleted Via Reg.EXE [Sigma converted]</description>
+  </rule>
+</group>

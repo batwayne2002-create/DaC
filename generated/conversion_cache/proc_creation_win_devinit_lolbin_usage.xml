@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100287" level="5">
+    <description>Arbitrary MSI Download Via Devinit.EXE [Sigma converted]</description>
+  </rule>
+</group>

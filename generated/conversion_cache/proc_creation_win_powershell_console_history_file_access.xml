@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="5">
+    <description>Potential PowerShell Console History Access Attempt via History File [Sigma converted]</description>
+  </rule>
+</group>

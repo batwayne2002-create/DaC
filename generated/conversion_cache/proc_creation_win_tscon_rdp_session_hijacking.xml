@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100254" level="5">
+    <description>Potential RDP Session Hijacking Activity [Sigma converted]</description>
+  </rule>
+</group>

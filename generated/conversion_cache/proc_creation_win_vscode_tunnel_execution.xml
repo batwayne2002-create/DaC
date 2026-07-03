@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100210" level="5">
+    <description>Visual Studio Code Tunnel Execution [Sigma converted]</description>
+  </rule>
+</group>

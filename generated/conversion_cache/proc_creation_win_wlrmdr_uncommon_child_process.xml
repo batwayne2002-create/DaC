@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100228" level="5">
+    <description>Wlrmdr.EXE Uncommon Argument Or Child Process [Sigma converted]</description>
+  </rule>
+</group>

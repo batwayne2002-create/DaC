@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100223" level="10">
+    <description>Suspicious CustomShellHost Execution [Sigma converted]</description>
+  </rule>
+</group>

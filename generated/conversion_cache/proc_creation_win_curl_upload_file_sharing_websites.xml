@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100248" level="10">
+    <description>Curl File Upload To File Sharing Websites [Sigma converted]</description>
+  </rule>
+</group>

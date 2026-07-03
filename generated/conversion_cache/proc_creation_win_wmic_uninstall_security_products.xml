@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100207" level="10">
+    <description>Potential Tampering With Security Products Via WMIC [Sigma converted]</description>
+  </rule>
+</group>

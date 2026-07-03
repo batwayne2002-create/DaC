@@ -1,0 +1,28 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200407
+date: 2024-07-12
+description: Detects the execution of a renamed Microsoft Teams binary.
+detection:
+  condition: selection and not 1 of filter_main_*
+  filter_main_legit_names:
+    Image|endswith:
+    - \msteams.exe
+    - \teams.exe
+  selection:
+    OriginalFileName:
+    - msteams.exe
+    - teams.exe
+falsepositives:
+- Unknown
+id: 88f46b67-14d4-4f45-ac2c-d66984f22191
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- Internal Research
+status: test
+tags:
+- attack.stealth
+title: Renamed Microsoft Teams Execution

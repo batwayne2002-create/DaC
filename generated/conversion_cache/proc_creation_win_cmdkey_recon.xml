@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100289" level="10">
+    <description>Potential Reconnaissance For Cached Credentials Via Cmdkey.EXE [Sigma converted]</description>
+  </rule>
+</group>

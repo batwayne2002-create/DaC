@@ -1,0 +1,34 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 201059
+date: 2023-07-27
+description: Detects execution of "curl.exe" with a potential custom "User-Agent".
+  Attackers can leverage this to download or exfiltrate data via "curl" to a domain
+  that only accept specific "User-Agent" strings
+detection:
+  condition: selection_img and 1 of selection_header_* and selection_user_agent
+  selection_header_flag_1:
+    CommandLine|re: \s-H\s
+  selection_header_flag_2:
+    CommandLine|contains: --header
+  selection_img:
+  - Image|endswith: \curl.exe
+  - OriginalFileName: curl.exe
+  selection_user_agent:
+    CommandLine|contains: 'User-Agent:'
+falsepositives:
+- Unknown
+id: 85de1f22-d189-44e4-8239-dc276b45379b
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-12-11
+references:
+- https://labs.withsecure.com/publications/fin7-target-veeam-servers
+- https://github.com/WithSecureLabs/iocs/blob/344203de742bb7e68bd56618f66d34be95a9f9fc/FIN7VEEAM/iocs.csv
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_curl_custom_user_agent/info.yml
+status: test
+tags:
+- attack.execution
+title: Curl Web Request With Potential Custom User-Agent

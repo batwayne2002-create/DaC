@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100254" level="10">
+    <description>Potential Recon Activity Using DriverQuery.EXE [Sigma converted]</description>
+  </rule>
+</group>

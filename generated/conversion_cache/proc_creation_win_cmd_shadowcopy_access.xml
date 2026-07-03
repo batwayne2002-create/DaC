@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="10">
+    <description>Copy From VolumeShadowCopy Via Cmd.EXE [Sigma converted]</description>
+  </rule>
+</group>

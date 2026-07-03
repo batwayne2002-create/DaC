@@ -1,0 +1,32 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200310
+date: 2026-04-27
+description: 'Detects the use of SFTP.exe to execute commands indirectly via ProxyCommand
+  parameter.
+
+  Threat actors were seen leveraging this legitimate Windows binary to bypass security
+  controls and execute arbitrary commands while evading detection.
+
+  '
+detection:
+  condition: selection
+  selection:
+    CommandLine|contains: ProxyCommand=
+    Image|endswith: \sftp.exe
+falsepositives:
+- Legitimate use of SFTP with proxy commands for administration or networking tasks
+id: 762bb580-79b4-40f4-8b9e-9349ce1710f4
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://lolbas-project.github.io/lolbas/Binaries/Sftp/
+- https://news.sophos.com/en-us/2025/05/09/lumma-stealer-coming-and-going/
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_lolbin_sftp_indirect_cmd_execution/info.yml
+status: experimental
+tags:
+- attack.stealth
+- attack.t1202
+title: Indirect Command Execution via SFTP ProxyCommand

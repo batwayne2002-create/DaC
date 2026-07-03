@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100252" level="5">
+    <description>Potentially Suspicious Child Process Of VsCode [Sigma converted]</description>
+  </rule>
+</group>

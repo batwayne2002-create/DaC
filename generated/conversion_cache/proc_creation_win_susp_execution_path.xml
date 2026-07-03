@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100222" level="10">
+    <description>Process Execution From A Potentially Suspicious Folder [Sigma converted]</description>
+  </rule>
+</group>

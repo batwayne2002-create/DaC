@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100258" level="5">
+    <description>Schedule Task Creation From Env Variable Or Potentially Suspicious Path Via Schtasks.EXE [Sigma converted]</description>
+  </rule>
+</group>

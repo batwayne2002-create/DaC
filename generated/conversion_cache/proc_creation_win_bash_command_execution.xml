@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100258" level="5">
+    <description>Indirect Inline Command Execution Via Bash.EXE [Sigma converted]</description>
+  </rule>
+</group>

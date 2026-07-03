@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100204" level="10">
+    <description>Renamed BrowserCore.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

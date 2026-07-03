@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100284" level="10">
+    <description>UAC Bypass Abusing Winsat Path Parsing - Process [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100223" level="10">
+    <description>Invoke-Obfuscation VAR+ Launcher [Sigma converted]</description>
+  </rule>
+</group>

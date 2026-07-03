@@ -1,0 +1,24 @@
+{
+  "rule_name": "MALW_Httpsd_ELF.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "a9f62f4a69e6ba900ad452d4fd670c5965c0e091f5c27b2a8854fe0fe0adaad3",
+  "validation_status": "failed",
+  "validation_errors": [
+    "error: rule \"Linux_Httpsd_malware_ARM\" in /tmp/tmps5fnkvz9.yar(54): undefined identifier \"is__elf\"",
+    "error: rule \"Linux_Httpsd_malware_i686\" in /tmp/tmps5fnkvz9.yar(73): undefined identifier \"is__elf\""
+  ],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.933862+00:00"
+}

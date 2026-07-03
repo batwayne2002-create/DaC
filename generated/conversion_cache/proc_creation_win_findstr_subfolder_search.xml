@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100251" level="3">
+    <description>Insensitive Subfolder Search Via Findstr.EXE [Sigma converted]</description>
+  </rule>
+</group>

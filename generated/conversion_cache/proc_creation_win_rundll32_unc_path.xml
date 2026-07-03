@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100244" level="10">
+    <description>Rundll32 UNC Path Execution [Sigma converted]</description>
+  </rule>
+</group>

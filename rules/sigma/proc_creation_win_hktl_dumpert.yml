@@ -1,0 +1,27 @@
+author: Florian Roth (Nextron Systems)
+custom:
+  wazuh_rule_id: 200946
+date: 2020-02-04
+description: Detects the use of Dumpert process dumper, which dumps the lsass.exe
+  process memory
+detection:
+  condition: selection
+  selection:
+  - Hashes|contains: MD5=09D278F9DE118EF09163C6140255C690
+  - CommandLine|contains: Dumpert.dll
+falsepositives:
+- Very unlikely
+id: 2704ab9e-afe2-4854-a3b1-0c0706d03578
+level: critical
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-01-22
+references:
+- https://github.com/outflanknl/Dumpert
+- https://unit42.paloaltonetworks.com/actors-still-exploiting-sharepoint-vulnerability/
+status: test
+tags:
+- attack.credential-access
+- attack.t1003.001
+title: HackTool - Dumpert Process Dumper Execution

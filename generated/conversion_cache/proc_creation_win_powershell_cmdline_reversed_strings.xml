@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100271" level="10">
+    <description>Potential PowerShell Obfuscation Via Reversed Commands [Sigma converted]</description>
+  </rule>
+</group>

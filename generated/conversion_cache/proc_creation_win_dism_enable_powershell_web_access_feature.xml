@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100266" level="10">
+    <description>PowerShell Web Access Feature Enabled Via DISM [Sigma converted]</description>
+  </rule>
+</group>

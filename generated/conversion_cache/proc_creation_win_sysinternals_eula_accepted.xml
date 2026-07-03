@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="3">
+    <description>Potential Execution of Sysinternals Tools [Sigma converted]</description>
+  </rule>
+</group>

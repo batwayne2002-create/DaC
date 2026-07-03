@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100269" level="10">
+    <description>Potential Privilege Escalation To LOCAL SYSTEM [Sigma converted]</description>
+  </rule>
+</group>

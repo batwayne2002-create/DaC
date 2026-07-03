@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100228" level="10">
+    <description>UAC Bypass Tools Using ComputerDefaults [Sigma converted]</description>
+  </rule>
+</group>

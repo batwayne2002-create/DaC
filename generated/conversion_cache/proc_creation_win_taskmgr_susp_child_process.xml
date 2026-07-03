@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100218" level="3">
+    <description>New Process Created Via Taskmgr.EXE [Sigma converted]</description>
+  </rule>
+</group>

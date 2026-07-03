@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100236" level="10">
+    <description>Suspicious SYSTEM User Process Creation [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100271" level="10">
+    <description>PUA - Memory Dump Mount Via MemProcFS [Sigma converted]</description>
+  </rule>
+</group>

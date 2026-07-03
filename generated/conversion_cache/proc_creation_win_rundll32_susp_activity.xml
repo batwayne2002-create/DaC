@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100215" level="5">
+    <description>Potentially Suspicious Rundll32 Activity [Sigma converted]</description>
+  </rule>
+</group>

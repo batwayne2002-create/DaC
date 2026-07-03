@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="10">
+    <description>DLL Sideloading by VMware Xfer Utility [Sigma converted]</description>
+  </rule>
+</group>

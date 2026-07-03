@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100271" level="10">
+    <description>Suspicious Execution From Outlook Temporary Folder [Sigma converted]</description>
+  </rule>
+</group>

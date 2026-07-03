@@ -1,0 +1,31 @@
+author: Christian Burkard (Nextron Systems)
+custom:
+  wazuh_rule_id: 200117
+date: 2021-08-30
+description: Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe
+  (UACMe 52)
+detection:
+  condition: selection
+  selection:
+    IntegrityLevel:
+    - High
+    - System
+    - S-1-16-16384
+    - S-1-16-12288
+    ParentCommandLine|contains: C:\Windows \system32\winsat.exe
+    ParentImage|endswith: \AppData\Local\Temp\system32\winsat.exe
+falsepositives:
+- Unknown
+id: 7a01183d-71a2-46ad-ad5c-acd989ac1793
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2024-12-01
+references:
+- https://github.com/hfiref0x/UACME
+status: test
+tags:
+- attack.privilege-escalation
+- attack.t1548.002
+title: UAC Bypass Abusing Winsat Path Parsing - Process

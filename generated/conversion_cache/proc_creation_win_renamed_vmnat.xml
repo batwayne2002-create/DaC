@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100219" level="10">
+    <description>Renamed Vmnat.exe Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100280" level="5">
+    <description>Potential Mpclient.DLL Sideloading Via OfflineScannerShell.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

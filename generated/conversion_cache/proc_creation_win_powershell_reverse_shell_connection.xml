@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100245" level="10">
+    <description>Potential Powershell ReverseShell Connection [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100240" level="10">
+    <description>Remote Access Tool - ScreenConnect Server Web Shell Execution [Sigma converted]</description>
+  </rule>
+</group>

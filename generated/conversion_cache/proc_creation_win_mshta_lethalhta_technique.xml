@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100281" level="10">
+    <description>Potential LethalHTA Technique Execution [Sigma converted]</description>
+  </rule>
+</group>

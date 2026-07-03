@@ -1,0 +1,43 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200780
+date: 2025-02-05
+description: Detects malicious behavior where the MMC utility (`mmc.exe`) executes
+  files with reversed extensions caused by Right-to-Left Override (RLO) abuse, disguising
+  them as document formats.
+detection:
+  condition: all of selection_*
+  selection_commandline:
+    CommandLine|contains:
+    - cod.msc
+    - fdp.msc
+    - ftr.msc
+    - lmth.msc
+    - slx.msc
+    - tdo.msc
+    - xcod.msc
+    - xslx.msc
+    - xtpp.msc
+  selection_image:
+  - Image|endswith: \mmc.exe
+  - OriginalFileName: MMC.exe
+falsepositives:
+- Legitimate administrative actions using MMC to execute misnamed `.msc` files.
+- Unconventional but non-malicious usage of RLO or reversed extensions.
+id: 9cfe4b27-1e56-48b4-b7a8-d46851c91a44
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://www.unicode.org/versions/Unicode5.2.0/ch02.pdf
+- https://en.wikipedia.org/wiki/Right-to-left_override
+- https://tria.ge/241015-l98snsyeje/behavioral2
+status: experimental
+tags:
+- attack.execution
+- attack.stealth
+- attack.t1204.002
+- attack.t1218.014
+- attack.t1036.002
+title: MMC Executing Files with Reversed Extensions Using RTLO Abuse

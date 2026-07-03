@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100299" level="10">
+    <description>UAC Bypass via ICMLuaUtil [Sigma converted]</description>
+  </rule>
+</group>

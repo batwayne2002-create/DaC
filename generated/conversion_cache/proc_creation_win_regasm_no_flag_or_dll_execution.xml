@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100263" level="3">
+    <description>RegAsm.EXE Execution Without CommandLine Flags or Files [Sigma converted]</description>
+  </rule>
+</group>

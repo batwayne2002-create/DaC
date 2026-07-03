@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100282" level="10">
+    <description>HackTool - UACMe Akagi Execution [Sigma converted]</description>
+  </rule>
+</group>

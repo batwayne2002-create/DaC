@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100221" level="10">
+    <description>User Shell Folders Registry Modification via CommandLine [Sigma converted]</description>
+  </rule>
+</group>

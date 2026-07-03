@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100255" level="10">
+    <description>Suspicious Child Process Created as System [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100206" level="10">
+    <description>Scheduled Task Creation Masquerading as System Processes [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,33 @@
+author: Michael Haag
+custom:
+  wazuh_rule_id: 201032
+date: 2024-09-03
+description: Detects the use of DISM to enable the PowerShell Web Access feature,
+  which could be used for remote access and potential abuse
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains|all:
+    - WindowsPowerShellWebAccess
+    - /online
+    - /enable-feature
+  selection_img:
+  - Image|endswith: \dism.exe
+  - OriginalFileName: DISM.EXE
+falsepositives:
+- Legitimate PowerShell Web Access installations by administrators
+id: 7e8f2d3b-9c1a-4f67-b9e8-8d9006e0e51f
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://docs.microsoft.com/en-us/powershell/module/dism/enable-windowsoptionalfeature
+- https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-241a
+- https://gist.github.com/MHaggis/7e67b659af9148fa593cf2402edebb41
+status: test
+tags:
+- attack.privilege-escalation
+- attack.persistence
+- attack.t1548.002
+title: PowerShell Web Access Feature Enabled Via DISM

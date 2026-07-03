@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100211" level="10">
+    <description>Suspicious File Download From IP Via Wget.EXE [Sigma converted]</description>
+  </rule>
+</group>

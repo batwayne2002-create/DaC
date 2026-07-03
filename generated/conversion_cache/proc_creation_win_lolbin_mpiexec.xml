@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100244" level="10">
+    <description>MpiExec Lolbin [Sigma converted]</description>
+  </rule>
+</group>

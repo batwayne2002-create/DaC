@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100220" level="10">
+    <description>Visual Basic Command Line Compiler Usage [Sigma converted]</description>
+  </rule>
+</group>

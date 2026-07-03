@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="5">
+    <description>REGISTER_APP.VBS Proxy Execution [Sigma converted]</description>
+  </rule>
+</group>

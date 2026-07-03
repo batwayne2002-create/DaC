@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100261" level="3">
+    <description>HH.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100233" level="10">
+    <description>Potential Persistence Via Logon Scripts - CommandLine [Sigma converted]</description>
+  </rule>
+</group>

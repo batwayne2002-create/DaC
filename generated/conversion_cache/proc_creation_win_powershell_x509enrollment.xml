@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100236" level="5">
+    <description>Suspicious X509Enrollment - Process Creation [Sigma converted]</description>
+  </rule>
+</group>

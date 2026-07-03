@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100261" level="10">
+    <description>File In Suspicious Location Encoded To Base64 Via Certutil.EXE [Sigma converted]</description>
+  </rule>
+</group>

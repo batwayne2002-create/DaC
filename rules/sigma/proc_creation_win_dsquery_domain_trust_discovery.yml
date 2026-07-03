@@ -1,0 +1,39 @@
+author: E.M. Anhaus, Tony Lambert, oscd.community, omkar72
+custom:
+  wazuh_rule_id: 201016
+date: 2019-10-24
+description: Detects execution of "dsquery.exe" for domain trust discovery
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains: trustedDomain
+  selection_img:
+  - Image|endswith: \dsquery.exe
+  - OriginalFileName: dsquery.exe
+falsepositives:
+- Legitimate use of the utilities by legitimate user for legitimate reason
+id: 3bad990e-4848-4a78-9530-b427d854aac0
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2023-02-02
+references:
+- https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1482/T1482.md
+- https://posts.specterops.io/an-introduction-to-manual-active-directory-querying-with-dsquery-and-ldapsearch-84943c13d7eb?gi=41b97a644843
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_dsquery_domain_trust_discovery/info.yml
+related:
+- id: b23fcb74-b1cb-4ff7-a31d-bfe2a7ba453b
+  type: similar
+- id: 77815820-246c-47b8-9741-e0def3f57308
+  type: obsolete
+simulation:
+- atomic_guid: 4700a710-c821-4e17-a3ec-9e4c81d6845f
+  name: Windows - Discover domain trusts with dsquery
+  technique: T1482
+  type: atomic-red-team
+status: test
+tags:
+- attack.discovery
+- attack.t1482
+title: Domain Trust Discovery Via Dsquery

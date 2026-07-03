@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100226" level="10">
+    <description>VeeamBackup Database Credentials Dump Via Sqlcmd.EXE [Sigma converted]</description>
+  </rule>
+</group>

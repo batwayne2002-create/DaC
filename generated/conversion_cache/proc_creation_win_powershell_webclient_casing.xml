@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100251" level="10">
+    <description>Net WebClient Casing Anomalies [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100288" level="3">
+    <description>Nltest.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

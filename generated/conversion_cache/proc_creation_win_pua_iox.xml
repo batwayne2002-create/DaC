@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100258" level="10">
+    <description>PUA- IOX Tunneling Tool Execution [Sigma converted]</description>
+  </rule>
+</group>

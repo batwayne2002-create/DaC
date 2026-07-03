@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100280" level="10">
+    <description>Mavinject Inject DLL Into Running Process [Sigma converted]</description>
+  </rule>
+</group>

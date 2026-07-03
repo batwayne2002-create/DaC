@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100237" level="5">
+    <description>Findstr Launching .lnk File [Sigma converted]</description>
+  </rule>
+</group>

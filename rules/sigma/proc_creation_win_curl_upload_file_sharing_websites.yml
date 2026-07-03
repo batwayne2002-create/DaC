@@ -1,0 +1,55 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 201050
+date: 2026-03-29
+description: Detects usage of curl to upload files to known file sharing domains,
+  which may indicate data exfiltration.
+detection:
+  condition: all of selection_*
+  selection_cli_domain:
+    CommandLine|contains:
+    - 0x0.st
+    - bashupload.com
+    - chunk.io
+    - file.io
+    - filebin.net
+    - pastebin
+    - send.firefox.com
+    - temp.sh
+    - transfer.sh
+    - ufile.io
+    - uploadfiles.io
+    - wetransfer.com
+    - x0.at
+  selection_cli_flags:
+  - CommandLine|contains:
+    - ' --form'
+    - ' --upload-file'
+    - ' --data'
+    - ' -X POST'
+    - ' --request POST '
+  - CommandLine|re:
+    - \s-[FTd]\s
+    - \s-sT\s
+  selection_img:
+  - Image|endswith: \curl.exe
+  - OriginalFileName: curl.exe
+falsepositives:
+- Legitimate file uploads to these services by administrators or developers
+id: e328cc73-f92a-42fb-b3fa-7c2cffda981a
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://unit42.paloaltonetworks.com/advanced-backdoor-squidoor/
+related:
+- id: 00bca14a-df4e-4649-9054-3f2aa676bc04
+  type: derived
+- id: 7d1aaf3d-4304-425c-b7c3-162055e0b3ab
+  type: similar
+status: experimental
+tags:
+- attack.exfiltration
+- attack.t1567.002
+title: Curl File Upload To File Sharing Websites

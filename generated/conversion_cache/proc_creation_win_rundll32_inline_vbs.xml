@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100275" level="10">
+    <description>Suspicious Rundll32 Invoking Inline VBScript [Sigma converted]</description>
+  </rule>
+</group>

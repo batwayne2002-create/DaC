@@ -1,0 +1,21 @@
+{
+  "rule_name": "APT_FVEY_ShadowBrokers_Jan17_Screen_Strings.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "c648f0c252e2e400980e3745d9f858e134ba3d6f88cb95aef1442d791e2d9ad3",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.678676+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100281" level="10">
+    <description>Potential Crypto Mining Activity [Sigma converted]</description>
+  </rule>
+</group>

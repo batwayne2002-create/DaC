@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100200" level="10">
+    <description>Tasks Folder Evasion [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="10">
+    <description>Self Extracting Package Creation Via Iexpress.EXE From Potentially Suspicious Location [Sigma converted]</description>
+  </rule>
+</group>

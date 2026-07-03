@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100249" level="10">
+    <description>All Backups Deleted Via Wbadmin.EXE [Sigma converted]</description>
+  </rule>
+</group>

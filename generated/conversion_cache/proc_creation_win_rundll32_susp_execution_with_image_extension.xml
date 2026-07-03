@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100294" level="10">
+    <description>Suspicious Rundll32 Execution With Image Extension [Sigma converted]</description>
+  </rule>
+</group>

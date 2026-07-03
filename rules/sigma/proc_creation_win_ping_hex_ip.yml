@@ -1,0 +1,27 @@
+author: Florian Roth (Nextron Systems)
+custom:
+  wazuh_rule_id: 200677
+date: 2018-03-23
+description: Detects a ping command that uses a hex encoded IP address
+detection:
+  condition: selection
+  selection:
+    CommandLine|re: 0x[a-fA-F0-9]{8}
+    Image|endswith: \ping.exe
+falsepositives:
+- Unlikely, because no sane admin pings IP addresses in a hexadecimal form
+id: 1a0d4aba-7668-4365-9ce4-6d79ab088dfd
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-17
+references:
+- https://github.com/vysecurity/Aggressor-VYSEC/blob/0d61c80387b9432dab64b8b8a9fb52d20cfef80e/ping.cna
+- https://twitter.com/vysecurity/status/977198418354491392
+status: test
+tags:
+- attack.stealth
+- attack.t1140
+- attack.t1027
+title: Ping Hex IP

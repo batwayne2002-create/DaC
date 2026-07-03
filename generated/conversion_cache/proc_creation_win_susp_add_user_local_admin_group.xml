@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100252" level="5">
+    <description>User Added to Local Administrators Group [Sigma converted]</description>
+  </rule>
+</group>

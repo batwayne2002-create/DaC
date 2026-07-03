@@ -1,0 +1,30 @@
+author: Christian Burkard (Nextron Systems)
+custom:
+  wazuh_rule_id: 200122
+date: 2021-08-30
+description: Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)
+detection:
+  condition: selection
+  selection:
+    CommandLine: '"C:\Windows\system32\msconfig.exe" -5'
+    IntegrityLevel:
+    - High
+    - System
+    - S-1-16-16384
+    - S-1-16-12288
+    ParentImage|endswith: \AppData\Local\Temp\pkgmgr.exe
+falsepositives:
+- Unknown
+id: ad92e3f9-7eb6-460e-96b1-582b0ccbb980
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2024-12-01
+references:
+- https://github.com/hfiref0x/UACME
+status: test
+tags:
+- attack.privilege-escalation
+- attack.t1548.002
+title: UAC Bypass Using MSConfig Token Modification - Process

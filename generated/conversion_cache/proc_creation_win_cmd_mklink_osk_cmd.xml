@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100248" level="10">
+    <description>Potential Privilege Escalation Using Symlink Between Osk and Cmd [Sigma converted]</description>
+  </rule>
+</group>

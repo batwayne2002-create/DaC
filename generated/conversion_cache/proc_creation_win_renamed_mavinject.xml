@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100222" level="10">
+    <description>Renamed Mavinject.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,23 @@
+{
+  "rule_name": "sharedcode.yara",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "0ca612cc2a30a7c89e229b193667f8a03967899fd0e2d5f70b43f6874d025195",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"DNSCalcStyleEncodeAndDecode\" in /tmp/tmp8ksgidy2.yar(181): string \"$a\" may slow down scanning"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.886695+00:00"
+}

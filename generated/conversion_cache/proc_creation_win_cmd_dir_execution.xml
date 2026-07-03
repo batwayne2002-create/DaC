@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100226" level="3">
+    <description>File And SubFolder Enumeration Via Dir Command [Sigma converted]</description>
+  </rule>
+</group>

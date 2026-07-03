@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100284" level="10">
+    <description>Suspicious Child Process Of Manage Engine ServiceDesk [Sigma converted]</description>
+  </rule>
+</group>

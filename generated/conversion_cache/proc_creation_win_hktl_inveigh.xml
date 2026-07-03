@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100261" level="15">
+    <description>HackTool - Inveigh Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100242" level="10">
+    <description>Remotely Hosted HTA File Executed Via Mshta.EXE [Sigma converted]</description>
+  </rule>
+</group>

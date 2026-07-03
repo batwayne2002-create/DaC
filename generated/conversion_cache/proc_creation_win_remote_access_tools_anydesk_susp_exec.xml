@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100235" level="10">
+    <description>Remote Access Tool - Anydesk Execution From Suspicious Folder [Sigma converted]</description>
+  </rule>
+</group>

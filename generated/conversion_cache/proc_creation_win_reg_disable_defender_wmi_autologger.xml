@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100272" level="10">
+    <description>Disabling Windows Defender WMI Autologger Session via Reg.exe [Sigma converted]</description>
+  </rule>
+</group>

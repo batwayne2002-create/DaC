@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100252" level="10">
+    <description>HackTool - RedMimicry Winnti Playbook Execution [Sigma converted]</description>
+  </rule>
+</group>

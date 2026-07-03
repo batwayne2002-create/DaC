@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100218" level="10">
+    <description>Deny Service Access Using Security Descriptor Tampering Via Sc.EXE [Sigma converted]</description>
+  </rule>
+</group>

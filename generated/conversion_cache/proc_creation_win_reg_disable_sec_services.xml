@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="10">
+    <description>Security Service Disabled Via Reg.EXE [Sigma converted]</description>
+  </rule>
+</group>

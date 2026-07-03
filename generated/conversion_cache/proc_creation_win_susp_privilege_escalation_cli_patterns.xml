@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100288" level="5">
+    <description>Suspicious RunAs-Like Flag Combination [Sigma converted]</description>
+  </rule>
+</group>

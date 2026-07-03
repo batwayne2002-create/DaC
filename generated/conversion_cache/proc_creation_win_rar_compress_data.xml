@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100264" level="3">
+    <description>Files Added To An Archive Using Rar.EXE [Sigma converted]</description>
+  </rule>
+</group>

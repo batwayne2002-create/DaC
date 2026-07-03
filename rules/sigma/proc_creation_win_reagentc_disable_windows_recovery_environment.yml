@@ -1,0 +1,35 @@
+author: Daniel Koifman (KoifSec), Michael Vilshin
+custom:
+  wazuh_rule_id: 200512
+date: 2025-07-31
+description: 'Detects attempts to disable windows recovery environment using Reagentc.
+
+  ReAgentc.exe is a command-line tool in Windows used to manage the Windows Recovery
+  Environment (WinRE).
+
+  It allows users to enable, disable, and configure WinRE, which is used for troubleshooting
+  and repairing common boot issues.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains|windash: /disable
+  selection_img:
+  - Image|endswith: \reagentc.exe
+  - OriginalFileName: reagentc.exe
+falsepositives:
+- Legitimate administrative activity
+id: db1c21e4-cd66-4b4e-85ca-590f0780529c
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://www.elastic.co/security-labs/maas-appeal-an-infostealer-rises-from-the-ashes
+- https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/reagentc-command-line-options?view=windows-11
+status: experimental
+tags:
+- attack.impact
+- attack.t1490
+title: Windows Recovery Environment Disabled Via Reagentc

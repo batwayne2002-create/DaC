@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100238" level="10">
+    <description>Suspicious AddinUtil.EXE CommandLine Execution [Sigma converted]</description>
+  </rule>
+</group>

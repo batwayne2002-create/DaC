@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100271" level="5">
+    <description>PUA - Potential PE Metadata Tamper Using Rcedit [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100293" level="10">
+    <description>Suspicious Scheduled Task Creation Involving Temp Folder [Sigma converted]</description>
+  </rule>
+</group>

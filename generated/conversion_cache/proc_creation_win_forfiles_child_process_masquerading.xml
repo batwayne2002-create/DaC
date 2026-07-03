@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100261" level="10">
+    <description>Forfiles.EXE Child Process Masquerading [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100251" level="10">
+    <description>Copying Sensitive Files with Credential Data [Sigma converted]</description>
+  </rule>
+</group>

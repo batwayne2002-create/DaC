@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100290" level="10">
+    <description>Potential Defense Evasion Via Rename Of Highly Relevant Binaries [Sigma converted]</description>
+  </rule>
+</group>

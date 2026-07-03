@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100219" level="10">
+    <description>Hacktool Execution - PE Metadata [Sigma converted]</description>
+  </rule>
+</group>

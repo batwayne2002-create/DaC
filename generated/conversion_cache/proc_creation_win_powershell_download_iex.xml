@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100246" level="10">
+    <description>PowerShell Download and Execution Cradles [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100242" level="10">
+    <description>Windows Internet Hosted WebDav Share Mount Via Net.EXE [Sigma converted]</description>
+  </rule>
+</group>

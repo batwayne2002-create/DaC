@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100287" level="10">
+    <description>Sysmon Discovery Via Default Driver Altitude Using Findstr.EXE [Sigma converted]</description>
+  </rule>
+</group>

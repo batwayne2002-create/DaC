@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100237" level="10">
+    <description>Renamed NetSupport RAT Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100216" level="10">
+    <description>DSInternals Suspicious PowerShell Cmdlets [Sigma converted]</description>
+  </rule>
+</group>

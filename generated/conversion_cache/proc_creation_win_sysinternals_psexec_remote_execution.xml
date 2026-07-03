@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100261" level="10">
+    <description>Potential PsExec Remote Execution [Sigma converted]</description>
+  </rule>
+</group>

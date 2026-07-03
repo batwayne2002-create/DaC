@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100279" level="10">
+    <description>Schtasks Creation Or Modification With SYSTEM Privileges [Sigma converted]</description>
+  </rule>
+</group>

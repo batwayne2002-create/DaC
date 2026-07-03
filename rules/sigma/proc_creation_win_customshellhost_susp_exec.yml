@@ -1,0 +1,31 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 201049
+date: 2022-08-19
+description: 'Detects the execution of CustomShellHost.exe where the child isn''t
+  located in ''C:\Windows\explorer.exe''. CustomShellHost is a known LOLBin that can
+  be abused by attackers for defense evasion techniques.
+
+  '
+detection:
+  condition: selection and not 1 of filter_main_*
+  filter_main_explorer:
+    Image: C:\Windows\explorer.exe
+  selection:
+    ParentImage|endswith: \CustomShellHost.exe
+falsepositives:
+- False positives are unlikely, investigate matches carefully.
+id: 84b14121-9d14-416e-800b-f3b829c5a14d
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-29
+references:
+- https://github.com/LOLBAS-Project/LOLBAS/pull/180
+- https://lolbas-project.github.io/lolbas/Binaries/CustomShellHost/
+status: test
+tags:
+- attack.stealth
+- attack.t1216
+title: Suspicious CustomShellHost Execution

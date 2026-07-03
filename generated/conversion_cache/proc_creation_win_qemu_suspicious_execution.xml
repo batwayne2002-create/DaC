@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100204" level="5">
+    <description>Potentially Suspicious Usage Of Qemu [Sigma converted]</description>
+  </rule>
+</group>

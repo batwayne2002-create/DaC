@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100229" level="10">
+    <description>PowerShell Base64 Encoded Invoke Keyword [Sigma converted]</description>
+  </rule>
+</group>

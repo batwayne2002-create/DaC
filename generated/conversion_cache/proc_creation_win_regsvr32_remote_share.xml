@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100233" level="10">
+    <description>Suspicious Regsvr32 Execution From Remote Share [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100287" level="10">
+    <description>RDP Connection Allowed Via Netsh.EXE [Sigma converted]</description>
+  </rule>
+</group>

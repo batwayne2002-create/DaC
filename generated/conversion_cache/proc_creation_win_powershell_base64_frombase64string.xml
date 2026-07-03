@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100200" level="10">
+    <description>PowerShell Base64 Encoded FromBase64String Cmdlet [Sigma converted]</description>
+  </rule>
+</group>

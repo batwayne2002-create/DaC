@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100250" level="10">
+    <description>Run PowerShell Script from ADS [Sigma converted]</description>
+  </rule>
+</group>

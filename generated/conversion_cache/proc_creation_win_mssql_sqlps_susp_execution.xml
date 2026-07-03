@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100243" level="5">
+    <description>Detection of PowerShell Execution via Sqlps.exe [Sigma converted]</description>
+  </rule>
+</group>

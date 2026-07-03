@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="10">
+    <description>Shadow Copies Deletion Using Operating Systems Utilities [Sigma converted]</description>
+  </rule>
+</group>

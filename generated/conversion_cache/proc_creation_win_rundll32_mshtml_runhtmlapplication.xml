@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100238" level="10">
+    <description>Mshtml.DLL RunHTMLApplication Suspicious Usage [Sigma converted]</description>
+  </rule>
+</group>

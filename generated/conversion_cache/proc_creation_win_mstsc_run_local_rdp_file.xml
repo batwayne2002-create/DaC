@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100298" level="3">
+    <description>Mstsc.EXE Execution With Local RDP File [Sigma converted]</description>
+  </rule>
+</group>

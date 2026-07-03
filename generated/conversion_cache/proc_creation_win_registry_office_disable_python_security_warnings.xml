@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100229" level="10">
+    <description>Python Function Execution Security Warning Disabled In Excel [Sigma converted]</description>
+  </rule>
+</group>

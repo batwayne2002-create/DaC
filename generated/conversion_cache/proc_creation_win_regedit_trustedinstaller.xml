@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100206" level="10">
+    <description>Regedit as Trusted Installer [Sigma converted]</description>
+  </rule>
+</group>

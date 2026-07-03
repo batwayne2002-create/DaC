@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100230" level="10">
+    <description>HackTool - GMER Rootkit Detector and Remover Execution [Sigma converted]</description>
+  </rule>
+</group>

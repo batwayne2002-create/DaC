@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100207" level="10">
+    <description>Remote CHM File Download/Execution Via HH.EXE [Sigma converted]</description>
+  </rule>
+</group>

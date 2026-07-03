@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100290" level="10">
+    <description>File Download From IP Based URL Via CertOC.EXE [Sigma converted]</description>
+  </rule>
+</group>

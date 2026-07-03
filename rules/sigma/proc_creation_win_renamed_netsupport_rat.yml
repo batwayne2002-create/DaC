@@ -1,0 +1,28 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200406
+date: 2022-09-19
+description: Detects the execution of a renamed "client32.exe" (NetSupport RAT) via
+  Imphash, Product and OriginalFileName strings
+detection:
+  condition: selection and not filter
+  filter:
+    Image|endswith: \client32.exe
+  selection:
+  - Product|contains: NetSupport Remote Control
+  - OriginalFileName|contains: client32.exe
+  - Hashes|contains: IMPHASH=A9D50692E95B79723F3E76FCF70D023E
+falsepositives:
+- Unknown
+id: 0afbd410-de03-4078-8491-f132303cb67d
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2024-11-23
+references:
+- https://redcanary.com/blog/misbehaving-rats/
+status: test
+tags:
+- attack.stealth
+title: Renamed NetSupport RAT Execution

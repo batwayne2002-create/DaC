@@ -1,0 +1,23 @@
+{
+  "rule_name": "APT_DPRK_ROKRAT.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "09505cf354ed4f2a962695db5bd5e11241aea01b4a6cd4d56dd7f85a9c15e2ce",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"ROKRAT_loader\" in /tmp/tmp6lujyulu.yar(43): string \"$b2\" may slow down scanning"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.744086+00:00"
+}

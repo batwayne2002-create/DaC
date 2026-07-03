@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100222" level="10">
+    <description>Hacktool - EDR-Freeze Execution [Sigma converted]</description>
+  </rule>
+</group>

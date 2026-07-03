@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100201" level="3">
+    <description>Run Once Task Execution as Configured in Registry [Sigma converted]</description>
+  </rule>
+</group>

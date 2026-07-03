@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100287" level="10">
+    <description>Suspicious CertReq Command to Download [Sigma converted]</description>
+  </rule>
+</group>

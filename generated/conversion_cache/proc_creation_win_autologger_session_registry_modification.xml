@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100246" level="10">
+    <description>Windows EventLog Autologger Session Registry Modification Via CommandLine [Sigma converted]</description>
+  </rule>
+</group>

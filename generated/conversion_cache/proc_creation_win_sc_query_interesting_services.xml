@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100253" level="3">
+    <description>Interesting Service Enumeration Via Sc.EXE [Sigma converted]</description>
+  </rule>
+</group>

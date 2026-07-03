@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100289" level="10">
+    <description>Regsvr32 DLL Execution With Suspicious File Extension [Sigma converted]</description>
+  </rule>
+</group>

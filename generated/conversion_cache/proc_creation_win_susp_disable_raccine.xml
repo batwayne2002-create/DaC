@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100243" level="10">
+    <description>Raccine Uninstall [Sigma converted]</description>
+  </rule>
+</group>
