@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100263" level="15">
+    <description>HackTool - Rubeus Execution [Sigma converted]</description>
+  </rule>
+</group>

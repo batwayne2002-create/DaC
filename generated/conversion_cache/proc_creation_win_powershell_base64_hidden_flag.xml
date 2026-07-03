@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100208" level="10">
+    <description>Malicious Base64 Encoded PowerShell Keywords in Command Lines [Sigma converted]</description>
+  </rule>
+</group>

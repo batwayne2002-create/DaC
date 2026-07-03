@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100279" level="10">
+    <description>VMToolsd Suspicious Child Process [Sigma converted]</description>
+  </rule>
+</group>

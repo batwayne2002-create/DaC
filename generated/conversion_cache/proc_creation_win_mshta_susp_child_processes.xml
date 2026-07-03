@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100251" level="10">
+    <description>Suspicious MSHTA Child Process [Sigma converted]</description>
+  </rule>
+</group>

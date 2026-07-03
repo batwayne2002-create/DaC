@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100258" level="10">
+    <description>Potential Defense Evasion Activity Via Emoji Usage In CommandLine - 2 [Sigma converted]</description>
+  </rule>
+</group>

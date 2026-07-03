@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100238" level="5">
+    <description>Automated Collection Command Prompt [Sigma converted]</description>
+  </rule>
+</group>

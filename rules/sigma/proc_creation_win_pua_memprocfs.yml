@@ -1,0 +1,47 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200550
+date: 2026-04-27
+description: 'Detects execution of MemProcFS a memory forensics tool with the ''-device''
+  parameter.
+
+  MemProcFS mounts physical memory as a virtual file system, allowing direct access
+  to process memory and system structures.
+
+  Threat actors were seen abusing this utility to mount memory dumps and then extract
+  sensitive information from processes like LSASS or extract registry hives to obtain
+  credentials, LSA secrets, SAM data, and cached domain credentials.
+
+  MemProcFS usage that is not part of authorized forensic analysis should be treated
+  as suspicious and warrants further investigation.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains: -device
+  selection_img:
+  - Image|endswith: \MemProcFS.exe
+  - OriginalFileName: MemProcFS.exe
+  - Description: MemProcFS
+falsepositives:
+- Legitimate use during memory forensics; if not part of authorized analysis, warrants
+  urgent investigation
+id: 8a1b2c3d-4e5f-6789-abcd-ef1234567890
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://github.com/ufrisk/MemProcFS
+- https://0xdf.gitlab.io/2024/10/05/htb-freelancer.html#
+- https://www.huntress.com/blog/curling-for-data-a-dive-into-a-threat-actors-malicious-ttps
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_pua_memprocfs/info.yml
+status: experimental
+tags:
+- attack.credential-access
+- attack.t1003
+- attack.t1003.001
+- attack.t1003.004
+- attack.t1003.002
+title: PUA - Memory Dump Mount Via MemProcFS

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100290" level="10">
+    <description>Potentially Suspicious Call To Win32_NTEventlogFile Class [Sigma converted]</description>
+  </rule>
+</group>

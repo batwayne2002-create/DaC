@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="3">
+    <description>File Deletion Via Del [Sigma converted]</description>
+  </rule>
+</group>

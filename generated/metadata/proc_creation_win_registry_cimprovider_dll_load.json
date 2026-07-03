@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_registry_cimprovider_dll_load.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "3a641d9a78e3242310d6cc0c708e069b772831c7b8d5dd9ddf00fd4238c6dc92",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:04:31.717262+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100201" level="3">
+    <description>BitLockerTogo.EXE Execution [Sigma converted]</description>
+  </rule>
+</group>

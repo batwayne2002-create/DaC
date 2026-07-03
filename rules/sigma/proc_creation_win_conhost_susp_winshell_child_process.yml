@@ -1,0 +1,49 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 201071
+date: 2025-02-05
+description: Detects suspicious child processes related to Windows Shell utilities
+  spawned by `conhost.exe`, which could indicate malicious activity using trusted
+  system components.
+detection:
+  condition: all of selection_*
+  selection_child:
+  - Image|endswith:
+    - \cmd.exe
+    - \cscript.exe
+    - \mshta.exe
+    - \powershell_ise.exe
+    - \powershell.exe
+    - \pwsh.exe
+    - \regsvr32.exe
+    - \wscript.exe
+  - OriginalFileName:
+    - cmd.exe
+    - cscript.exe
+    - mshta.exe
+    - powershell_ise.exe
+    - powershell.exe
+    - pwsh.dll
+    - regsvr32.exe
+    - wscript.exe
+  selection_parent:
+    ParentImage|endswith: \conhost.exe
+falsepositives:
+- Legitimate administrative tasks using `conhost.exe` to spawn child processes such
+  as `cmd.exe`, `powershell.exe`, or `regsvr32.exe`.
+id: dfa03a09-8b92-4d83-8e74-f72839b1c407
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://tria.ge/241015-l98snsyeje/behavioral2
+related:
+- id: 7dc2dedd-7603-461a-bc13-15803d132355
+  type: similar
+status: experimental
+tags:
+- attack.stealth
+- attack.t1202
+- attack.t1218
+title: Potentially Suspicious Child Processes Spawned by ConHost

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100252" level="3">
+    <description>NodeJS Execution of JavaScript File [Sigma converted]</description>
+  </rule>
+</group>

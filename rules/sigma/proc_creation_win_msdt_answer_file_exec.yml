@@ -1,0 +1,33 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200772
+date: 2022-06-13
+description: 'Detects execution of "msdt.exe" using an answer file which is simulating
+  the legitimate way of calling msdt via "pcwrun.exe" (For example from the compatibility
+  tab).
+
+  '
+detection:
+  condition: selection and not 1 of filter_main_*
+  filter_main_pcwrun:
+    ParentImage|endswith: \pcwrun.exe
+  selection:
+    CommandLine|contains: \WINDOWS\diagnostics\index\PCWDiagnostic.xml
+    CommandLine|contains|windash: ' -af '
+    Image|endswith: \msdt.exe
+falsepositives:
+- Possible undocumented parents of "msdt" other than "pcwrun".
+id: 9c8c7000-3065-44a8-a555-79bcba5d9955
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-29
+references:
+- https://lolbas-project.github.io/lolbas/Binaries/Msdt/
+status: test
+tags:
+- attack.stealth
+- attack.t1218
+- attack.execution
+title: MSDT Execution Via Answer File

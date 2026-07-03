@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100201" level="10">
+    <description>Deletion of Volume Shadow Copies via WMI with PowerShell [Sigma converted]</description>
+  </rule>
+</group>

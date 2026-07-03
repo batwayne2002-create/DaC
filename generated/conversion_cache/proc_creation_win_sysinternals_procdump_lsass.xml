@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100242" level="10">
+    <description>Potential LSASS Process Dump Via Procdump [Sigma converted]</description>
+  </rule>
+</group>

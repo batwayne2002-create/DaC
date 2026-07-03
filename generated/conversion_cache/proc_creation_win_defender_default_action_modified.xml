@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100229" level="10">
+    <description>PowerShell Defender Threat Severity Default Action Set to 'Allow' or 'NoAction' [Sigma converted]</description>
+  </rule>
+</group>

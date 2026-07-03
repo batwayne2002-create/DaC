@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100293" level="10">
+    <description>Sensitive File Dump Via Print.EXE [Sigma converted]</description>
+  </rule>
+</group>

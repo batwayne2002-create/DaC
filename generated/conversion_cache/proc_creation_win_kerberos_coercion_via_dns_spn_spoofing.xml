@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100201" level="10">
+    <description>Attempts of Kerberos Coercion Via DNS SPN Spoofing [Sigma converted]</description>
+  </rule>
+</group>

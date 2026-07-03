@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100287" level="10">
+    <description>Execution of Powershell Script in Public Folder [Sigma converted]</description>
+  </rule>
+</group>

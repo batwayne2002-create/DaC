@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100220" level="10">
+    <description>User Added to Remote Desktop Users Group [Sigma converted]</description>
+  </rule>
+</group>

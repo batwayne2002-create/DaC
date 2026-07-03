@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100277" level="3">
+    <description>Potential Encoded PowerShell Patterns In CommandLine [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100216" level="10">
+    <description>Add Insecure Download Source To Winget [Sigma converted]</description>
+  </rule>
+</group>

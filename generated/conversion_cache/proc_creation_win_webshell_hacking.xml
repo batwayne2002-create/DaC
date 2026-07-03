@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100247" level="10">
+    <description>Webshell Hacking Activity Patterns [Sigma converted]</description>
+  </rule>
+</group>

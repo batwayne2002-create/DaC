@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100269" level="5">
+    <description>Potential Arbitrary File Download Via Cmdl32.EXE [Sigma converted]</description>
+  </rule>
+</group>

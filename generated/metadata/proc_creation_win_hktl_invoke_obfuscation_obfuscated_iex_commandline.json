@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_hktl_invoke_obfuscation_obfuscated_iex_commandline.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "2bb9639db0e66a06571c92d5a3d35ef1b9e43d432a769cd171ab07b96a26bf57",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:07:04.282452+00:00"
+}

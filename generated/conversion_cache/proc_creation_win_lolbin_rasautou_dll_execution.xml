@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100291" level="5">
+    <description>DLL Execution via Rasautou.exe [Sigma converted]</description>
+  </rule>
+</group>

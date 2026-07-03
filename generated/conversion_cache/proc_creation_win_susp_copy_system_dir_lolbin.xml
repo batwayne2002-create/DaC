@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100227" level="10">
+    <description>LOL-Binary Copied From System Directory [Sigma converted]</description>
+  </rule>
+</group>

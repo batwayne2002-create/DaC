@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100241" level="10">
+    <description>Potential CommandLine Obfuscation Using Unicode Characters From Suspicious Image [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100259" level="10">
+    <description>New User Created Via Net.EXE With Never Expire Option [Sigma converted]</description>
+  </rule>
+</group>

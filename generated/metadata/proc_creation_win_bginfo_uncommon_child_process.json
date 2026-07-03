@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_bginfo_uncommon_child_process.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "d7d4b9cd6439dd4b98b981a1f13cee3f67d7854d8ddcfca93d19ef3b44e8b958",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:18.989754+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100268" level="10">
+    <description>Execution via WorkFolders.exe [Sigma converted]</description>
+  </rule>
+</group>

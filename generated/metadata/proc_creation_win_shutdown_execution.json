@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_shutdown_execution.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "818ee3bbcf0a209d2b04720b311946056721cf0681b0eccd76ab77afa08d8e23",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:03:35.909756+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100263" level="3">
+    <description>Stop Windows Service Via PowerShell Stop-Service [Sigma converted]</description>
+  </rule>
+</group>

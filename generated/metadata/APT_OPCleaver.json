@@ -1,0 +1,21 @@
+{
+  "rule_name": "APT_OPCleaver.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "42a79b615c1d380343817c22ae0061dc6fd8652fc1eac941d961a775947e2520",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.540358+00:00"
+}

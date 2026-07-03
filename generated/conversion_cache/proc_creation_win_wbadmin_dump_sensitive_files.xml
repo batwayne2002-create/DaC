@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100258" level="10">
+    <description>Sensitive File Dump Via Wbadmin.EXE [Sigma converted]</description>
+  </rule>
+</group>

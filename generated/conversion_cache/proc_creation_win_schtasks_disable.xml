@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100250" level="10">
+    <description>Disable Important Scheduled Task [Sigma converted]</description>
+  </rule>
+</group>

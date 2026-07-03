@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100229" level="5">
+    <description>New Agent Skills Installation Attempt Via Node.EXE [Sigma converted]</description>
+  </rule>
+</group>

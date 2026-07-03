@@ -1,0 +1,21 @@
+{
+  "rule_name": "MALW_BackdoorSSH.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "9bdfe41c642f35923de1c7a835d92bcebd5f86892c41ef3f8ed63a32202cebbe",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.198252+00:00"
+}

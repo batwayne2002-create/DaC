@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="10">
+    <description>Suspicious ShellExec_RunDLL Call Via Ordinal [Sigma converted]</description>
+  </rule>
+</group>

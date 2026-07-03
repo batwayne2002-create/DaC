@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100289" level="10">
+    <description>ETW Logging Tamper In .NET Processes Via CommandLine [Sigma converted]</description>
+  </rule>
+</group>

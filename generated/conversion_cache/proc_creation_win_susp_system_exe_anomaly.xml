@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100248" level="10">
+    <description>System File Execution Location Anomaly [Sigma converted]</description>
+  </rule>
+</group>

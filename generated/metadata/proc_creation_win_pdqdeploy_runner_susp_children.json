@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_pdqdeploy_runner_susp_children.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "dbc965434e4fd8dd94edd69b52ab7b4f95b89715b71c9cbfe9beaefbc5134eea",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:05:42.909277+00:00"
+}

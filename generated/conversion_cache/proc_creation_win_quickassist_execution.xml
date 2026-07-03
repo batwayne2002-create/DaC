@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100217" level="3">
+    <description>QuickAssist Execution [Sigma converted]</description>
+  </rule>
+</group>

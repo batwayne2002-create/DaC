@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100240" level="10">
+    <description>AADInternals PowerShell Cmdlets Execution - ProccessCreation [Sigma converted]</description>
+  </rule>
+</group>

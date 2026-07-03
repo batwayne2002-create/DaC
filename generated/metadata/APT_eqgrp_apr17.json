@@ -1,0 +1,23 @@
+{
+  "rule_name": "APT_eqgrp_apr17.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "165f5860a7f56765e4f41edb70c3944392972aabe76038ecfbb3f0c214e6a22e",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"EquationGroup_elatedmonkey_1_0_1_1\" in /tmp/tmpt7of8_f0.yar(756): expression always false - requesting 5 of 3."
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.300612+00:00"
+}

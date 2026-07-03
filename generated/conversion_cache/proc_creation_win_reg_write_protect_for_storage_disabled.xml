@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100267" level="5">
+    <description>Write Protect For Storage Disabled [Sigma converted]</description>
+  </rule>
+</group>

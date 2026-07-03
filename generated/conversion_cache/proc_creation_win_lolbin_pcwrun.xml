@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100285" level="3">
+    <description>Indirect Command Execution By Program Compatibility Wizard [Sigma converted]</description>
+  </rule>
+</group>

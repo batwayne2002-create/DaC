@@ -1,0 +1,51 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200322
+date: 2025-02-05
+description: Detects the creation of scheduled tasks that involve system processes,
+  which may indicate malicious actors masquerading as or abusing these processes to
+  execute payloads or maintain persistence.
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains:
+    - ' audiodg'
+    - ' conhost'
+    - ' dwm.exe'
+    - ' explorer'
+    - ' lsass'
+    - ' lsm'
+    - ' mmc'
+    - ' msiexec'
+    - ' regsvr32'
+    - ' rundll32'
+    - ' services'
+    - ' spoolsv'
+    - ' svchost'
+    - ' taskeng'
+    - ' taskhost'
+    - ' wininit'
+    - ' winlogon'
+    CommandLine|contains|windash: ' /create '
+  selection_img:
+  - Image|endswith: \schtasks.exe
+  - OriginalFileName: schtasks.exe
+falsepositives:
+- Legitimate system administration tasks scheduling trusted system processes.
+id: 9f8573c9-22b4-40e3-89c1-72bc2b8d49ab
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://tria.ge/241015-l98snsyeje/behavioral2
+status: experimental
+tags:
+- attack.privilege-escalation
+- attack.execution
+- attack.persistence
+- attack.stealth
+- attack.t1053.005
+- attack.t1036.004
+- attack.t1036.005
+title: Scheduled Task Creation Masquerading as System Processes

@@ -1,0 +1,21 @@
+{
+  "rule_name": "general.yara",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "52cfb86f325fbfe64dd3eac4cc8636ff8097a54af15762f7a83391f25c75ea8d",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.892376+00:00"
+}

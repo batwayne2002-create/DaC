@@ -1,0 +1,21 @@
+{
+  "rule_name": "MALW_FUDCrypt.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "8685cee1f9982e05de4ca80eefc50cec7eae8256e730804f2fdd06deaa12a1bb",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.011400+00:00"
+}

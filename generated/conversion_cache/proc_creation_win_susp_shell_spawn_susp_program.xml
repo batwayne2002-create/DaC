@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100233" level="10">
+    <description>Windows Shell/Scripting Processes Spawning Suspicious Programs [Sigma converted]</description>
+  </rule>
+</group>

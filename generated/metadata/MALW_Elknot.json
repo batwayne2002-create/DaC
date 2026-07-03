@@ -1,0 +1,21 @@
+{
+  "rule_name": "MALW_Elknot.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "d5f0479d4d1dddb49c8f322464da322245cd3f4d6d8f6a6523000dc1c982f8aa",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.061117+00:00"
+}

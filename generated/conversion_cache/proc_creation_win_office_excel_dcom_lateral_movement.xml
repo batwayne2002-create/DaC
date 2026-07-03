@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100271" level="10">
+    <description>Potential Excel.EXE DCOM Lateral Movement Via ActivateMicrosoftApp [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,23 @@
+{
+  "rule_name": "TOOLKIT_Mandibule.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "d268e39a68c5061714d03c8bfa73ba3f26baf56b9d0204c88ace0a578bd55911",
+  "validation_status": "failed",
+  "validation_errors": [
+    "error: rule \"TOOLKIT_Mandibule\" in /tmp/tmp9hqof9of.yar(65): undefined identifier \"is__elf\""
+  ],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:29.783665+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100292" level="5">
+    <description>PUA - Process Hacker Execution [Sigma converted]</description>
+  </rule>
+</group>

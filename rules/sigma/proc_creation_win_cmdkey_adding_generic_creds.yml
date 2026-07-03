@@ -1,0 +1,42 @@
+author: frack113, Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 201081
+date: 2023-02-03
+description: 'Detects usage of "cmdkey.exe" to add generic credentials.
+
+  As an example, this can be used before connecting to an RDP session via command
+  line interface.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_cli_generic:
+    CommandLine|contains|windash: ' -g'
+  selection_cli_password:
+    CommandLine|contains|windash: ' -p'
+  selection_cli_user:
+    CommandLine|contains|windash: ' -u'
+  selection_img:
+  - Image|endswith: \cmdkey.exe
+  - OriginalFileName: cmdkey.exe
+falsepositives:
+- Legitimate usage for administration purposes
+id: b1ec66c6-f4d1-4b5c-96dd-af28ccae7727
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2024-03-05
+references:
+- https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1021.001/T1021.001.md#t1021001---remote-desktop-protocol
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_cmdkey_adding_generic_creds/info.yml
+simulation:
+- atomic_guid: 355d4632-8cb9-449d-91ce-b566d0253d3e
+  name: RDP to DomainController
+  technique: T1021.001
+  type: atomic-red-team
+status: test
+tags:
+- attack.credential-access
+- attack.t1003.005
+title: New Generic Credentials Added Via Cmdkey.EXE

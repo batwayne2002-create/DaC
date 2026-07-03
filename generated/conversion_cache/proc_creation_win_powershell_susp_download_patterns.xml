@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100277" level="10">
+    <description>Suspicious PowerShell Download and Execute Pattern [Sigma converted]</description>
+  </rule>
+</group>

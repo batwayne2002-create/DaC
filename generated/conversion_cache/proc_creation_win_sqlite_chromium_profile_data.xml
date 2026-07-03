@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100225" level="10">
+    <description>SQLite Chromium Profile Data DB Access [Sigma converted]</description>
+  </rule>
+</group>

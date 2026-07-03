@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100200" level="3">
+    <description>Directory Removal Via Rmdir [Sigma converted]</description>
+  </rule>
+</group>

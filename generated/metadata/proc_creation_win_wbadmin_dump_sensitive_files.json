@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_wbadmin_dump_sensitive_files.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "423213b01d23a9ebc6cf87d7b3dc5cbeec4f2b429134e62f798db2d2085e3bce",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-02T19:44:45.320489+00:00"
+}

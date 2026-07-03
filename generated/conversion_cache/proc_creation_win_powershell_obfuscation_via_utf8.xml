@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100235" level="10">
+    <description>Potential PowerShell Obfuscation Via WCHAR/CHAR [Sigma converted]</description>
+  </rule>
+</group>

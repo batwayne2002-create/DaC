@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100274" level="5">
+    <description>Suspicious Diantz Download and Compress Into a CAB File [Sigma converted]</description>
+  </rule>
+</group>

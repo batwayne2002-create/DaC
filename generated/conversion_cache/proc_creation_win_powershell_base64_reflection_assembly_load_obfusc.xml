@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100264" level="10">
+    <description>Suspicious Encoded And Obfuscated Reflection Assembly Load Function Call [Sigma converted]</description>
+  </rule>
+</group>

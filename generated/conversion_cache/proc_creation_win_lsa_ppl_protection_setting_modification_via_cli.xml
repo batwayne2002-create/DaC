@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100210" level="5">
+    <description>LSA PPL Protection Setting Modification via CommandLine [Sigma converted]</description>
+  </rule>
+</group>

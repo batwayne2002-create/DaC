@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100278" level="5">
+    <description>Remote Code Execute via Winrm.vbs [Sigma converted]</description>
+  </rule>
+</group>

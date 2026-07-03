@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100246" level="10">
+    <description>File Explorer Folder Opened Using Explorer Folder Shortcut Via Shell [Sigma converted]</description>
+  </rule>
+</group>

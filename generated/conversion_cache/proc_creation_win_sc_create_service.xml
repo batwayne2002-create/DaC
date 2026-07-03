@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100277" level="3">
+    <description>New Service Creation Using Sc.EXE [Sigma converted]</description>
+  </rule>
+</group>

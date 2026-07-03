@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100228" level="3">
+    <description>Discovery of a System Time [Sigma converted]</description>
+  </rule>
+</group>

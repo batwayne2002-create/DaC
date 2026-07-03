@@ -1,0 +1,44 @@
+author: Matt Anderson, Dray Agha, Anna Pham (Huntress)
+custom:
+  wazuh_rule_id: 200551
+date: 2026-01-02
+description: 'Detects execution of the Kernel Driver Utility (KDU) tool.
+
+  KDU can be used to bypass driver signature enforcement and load unsigned or malicious
+  drivers into the Windows kernel.
+
+  Potentially allowing for privilege escalation, persistence, or evasion of security
+  controls.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_cli_suspicious:
+    CommandLine|contains:
+    - '-map '
+    - '-prv '
+    - '-dse '
+    - '-ps '
+  selection_img:
+  - Image|endswith:
+    - \kdu.exe
+    - \hamakaze.exe
+  - OriginalFileName: hamakaze.exe
+falsepositives:
+- Legitimate driver development, testing, or administrative troubleshooting (e.g.,
+  enabling/disabling hardware)
+id: e76ca062-4de0-4d79-8d90-160a0d335eca
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://github.com/h4rmy/KDU
+- https://huntress.com/blog/esxi-vm-escape-exploit
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_pua_kdu_driver_tool/info.yml
+status: experimental
+tags:
+- attack.persistence
+- attack.privilege-escalation
+- attack.t1543.003
+title: PUA - Kernel Driver Utility (KDU) Execution

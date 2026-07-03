@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100298" level="10">
+    <description>Suspicious Windows Trace ETW Session Tamper Via Logman.EXE [Sigma converted]</description>
+  </rule>
+</group>

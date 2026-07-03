@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100203" level="10">
+    <description>Uncommon Svchost Command Line Parameter [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,44 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200340
+date: 2025-02-05
+description: 'Detects the creation of a scheduled task using schtasks.exe, potentially
+  in combination with curl for downloading payloads and PowerShell for executing them.
+
+  This facilitates executing malicious payloads or connecting with C&C server persistently
+  without dropping the malware sample on the host.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_curl:
+    CommandLine|contains|all:
+    - 'curl '
+    - http
+    - -o
+  selection_img:
+    CommandLine|contains|windash: ' /create '
+    Image|endswith: \schtasks.exe
+  selection_powershell:
+    CommandLine|contains: powershell
+falsepositives:
+- Legitimate use of schtasks for administrative purposes.
+- Automation scripts combining curl and PowerShell in controlled environments.
+id: 1d174d38-8fda-4081-a9b6-56d9763c0cd8
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://tria.ge/241015-l98snsyeje/behavioral2
+status: experimental
+tags:
+- attack.privilege-escalation
+- attack.execution
+- attack.persistence
+- attack.stealth
+- attack.t1053.005
+- attack.t1218
+- attack.command-and-control
+- attack.t1105
+title: Scheduled Task Creation with Curl and PowerShell Execution Combo

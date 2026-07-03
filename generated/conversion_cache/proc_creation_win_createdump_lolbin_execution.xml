@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100232" level="10">
+    <description>CreateDump Process Dump [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100279" level="5">
+    <description>Suspicious Schtasks Schedule Type With High Privileges [Sigma converted]</description>
+  </rule>
+</group>

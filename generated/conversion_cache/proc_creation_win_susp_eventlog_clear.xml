@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100201" level="10">
+    <description>Suspicious Eventlog Clearing or Configuration Change Activity [Sigma converted]</description>
+  </rule>
+</group>

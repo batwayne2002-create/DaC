@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100203" level="10">
+    <description>Possible Privilege Escalation via Weak Service Permissions [Sigma converted]</description>
+  </rule>
+</group>

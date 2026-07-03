@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100266" level="10">
+    <description>Suspicious Program Location Whitelisted In Firewall Via Netsh.EXE [Sigma converted]</description>
+  </rule>
+</group>

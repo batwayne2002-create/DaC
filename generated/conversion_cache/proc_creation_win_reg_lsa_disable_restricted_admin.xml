@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100277" level="10">
+    <description>RestrictedAdminMode Registry Value Tampering - ProcCreation [Sigma converted]</description>
+  </rule>
+</group>

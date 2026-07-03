@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100204" level="10">
+    <description>PUA - NirCmd Execution As LOCAL SYSTEM [Sigma converted]</description>
+  </rule>
+</group>

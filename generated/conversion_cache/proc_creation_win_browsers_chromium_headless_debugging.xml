@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100211" level="10">
+    <description>Potential Data Stealing Via Chromium Headless Debugging [Sigma converted]</description>
+  </rule>
+</group>

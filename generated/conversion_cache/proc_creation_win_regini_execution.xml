@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100205" level="3">
+    <description>Registry Modification Via Regini.EXE [Sigma converted]</description>
+  </rule>
+</group>

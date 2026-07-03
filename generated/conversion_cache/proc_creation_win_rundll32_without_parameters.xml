@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100269" level="10">
+    <description>Rundll32 Execution Without Parameters [Sigma converted]</description>
+  </rule>
+</group>

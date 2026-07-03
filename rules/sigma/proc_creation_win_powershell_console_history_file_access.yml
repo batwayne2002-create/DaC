@@ -1,0 +1,31 @@
+author: "Luc G\xE9naux"
+custom:
+  wazuh_rule_id: 200646
+date: 2025-04-03
+description: 'Detects potential access attempts to the PowerShell console history
+  directly via history file (ConsoleHost_history.txt).
+
+  This can give access to plaintext passwords used in PowerShell commands or used
+  for general reconnaissance.
+
+  '
+detection:
+  condition: selection
+  selection:
+    CommandLine|contains:
+    - ConsoleHost_history.txt
+    - (Get-PSReadLineOption).HistorySavePath
+falsepositives:
+- Legitimate access of the console history file is possible
+id: f4ff7323-b5fc-4323-8b52-6b9408e15788
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://0xdf.gitlab.io/2018/11/08/powershell-history-file.html
+status: experimental
+tags:
+- attack.credential-access
+- attack.t1552.001
+title: Potential PowerShell Console History Access Attempt via History File

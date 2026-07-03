@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100267" level="3">
+    <description>Virtualbox Driver Installation or Starting of VMs [Sigma converted]</description>
+  </rule>
+</group>

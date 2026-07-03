@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100230" level="5">
+    <description>Indirect Command Execution From Script File Via Bash.EXE [Sigma converted]</description>
+  </rule>
+</group>

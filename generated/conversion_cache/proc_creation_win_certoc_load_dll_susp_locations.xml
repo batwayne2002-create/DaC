@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100248" level="10">
+    <description>Suspicious DLL Loaded via CertOC.EXE [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="10">
+    <description>Set Suspicious Files as System Files Using Attrib.EXE [Sigma converted]</description>
+  </rule>
+</group>

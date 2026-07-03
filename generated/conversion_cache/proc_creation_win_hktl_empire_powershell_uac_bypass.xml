@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100267" level="15">
+    <description>HackTool - Empire PowerShell UAC Bypass [Sigma converted]</description>
+  </rule>
+</group>

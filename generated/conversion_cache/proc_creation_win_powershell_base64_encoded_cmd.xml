@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100296" level="10">
+    <description>Suspicious Encoded PowerShell Command Line [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100225" level="10">
+    <description>Suspicious Manipulation Of Default Accounts Via Net.EXE [Sigma converted]</description>
+  </rule>
+</group>

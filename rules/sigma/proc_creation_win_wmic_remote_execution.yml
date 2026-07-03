@@ -1,0 +1,43 @@
+author: frack113, Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200029
+date: 2023-02-14
+description: Detects the execution of WMIC to query information on a remote system
+detection:
+  condition: all of selection_* and not 1 of filter_main_*
+  filter_main_localhost:
+    CommandLine|contains:
+    - localhost
+    - 127.0.0.1
+  selection_cli:
+    CommandLine|contains|windash: '/node:'
+  selection_img:
+  - Image|endswith: \WMIC.exe
+  - OriginalFileName: wmic.exe
+falsepositives:
+- Unknown
+id: 7773b877-5abb-4a3e-b9c9-fd0369b59b00
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-22
+references:
+- https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_wmic_remote_execution/info.yml
+related:
+- id: e42af9df-d90b-4306-b7fb-05c863847ebd
+  type: obsolete
+- id: 09af397b-c5eb-4811-b2bb-08b3de464ebf
+  type: obsolete
+simulation:
+- atomic_guid: 9c8ef159-c666-472f-9874-90c8d60d136b
+  name: WMI Execute Remote Process
+  technique: T1047
+  type: atomic-red-team
+status: test
+tags:
+- attack.execution
+- attack.t1047
+title: WMIC Remote Command Execution

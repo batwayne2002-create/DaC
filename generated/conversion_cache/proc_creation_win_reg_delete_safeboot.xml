@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100205" level="10">
+    <description>SafeBoot Registry Key Deleted Via Reg.EXE [Sigma converted]</description>
+  </rule>
+</group>

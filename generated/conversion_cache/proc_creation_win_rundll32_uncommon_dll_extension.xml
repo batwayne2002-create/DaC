@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100205" level="5">
+    <description>Rundll32 Execution With Uncommon DLL Extension [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100299" level="10">
+    <description>RemoteFXvGPUDisablement Abuse Via AtomicTestHarnesses [Sigma converted]</description>
+  </rule>
+</group>

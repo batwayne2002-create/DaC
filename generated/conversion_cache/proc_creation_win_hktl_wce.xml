@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100210" level="15">
+    <description>HackTool - Windows Credential Editor (WCE) Execution [Sigma converted]</description>
+  </rule>
+</group>

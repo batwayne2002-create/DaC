@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100212" level="10">
+    <description>Scheduled Task Executing Encoded Payload from Registry [Sigma converted]</description>
+  </rule>
+</group>

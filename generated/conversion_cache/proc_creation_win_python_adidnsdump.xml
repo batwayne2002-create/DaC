@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100208" level="3">
+    <description>PUA - Adidnsdump Execution [Sigma converted]</description>
+  </rule>
+</group>

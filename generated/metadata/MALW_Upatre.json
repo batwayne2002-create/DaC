@@ -1,0 +1,21 @@
+{
+  "rule_name": "MALW_Upatre.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "24c30dc0e9129f7b0889bf63e53b4a8e89caa202bb9f8f6f0e7b3ce7d9e8122b",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.413770+00:00"
+}

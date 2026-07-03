@@ -1,0 +1,33 @@
+author: '@Kostastsale'
+custom:
+  wazuh_rule_id: 201003
+date: 2022-12-22
+description: 'Detects the initial execution of "cmd.exe" which spawns "explorer.exe"
+  with the appropriate command line arguments for opening the "My Computer" folder.
+
+  '
+detection:
+  condition: selection
+  selection:
+    CommandLine|contains: shell:mycomputerfolder
+    Image|endswith: \explorer.exe
+    ParentImage|endswith:
+    - \cmd.exe
+    - \powershell.exe
+    - \pwsh.exe
+falsepositives:
+- Unknown
+id: c3d76afc-93df-461e-8e67-9b2bad3f2ac4
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2024-08-23
+references:
+- https://ss64.com/nt/shell.html
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_explorer_folder_shortcut_via_shell_binary/info.yml
+status: test
+tags:
+- attack.discovery
+- attack.t1135
+title: File Explorer Folder Opened Using Explorer Folder Shortcut Via Shell

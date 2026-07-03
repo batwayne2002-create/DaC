@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="10">
+    <description>System Restore Registry Modification via CommandLine [Sigma converted]</description>
+  </rule>
+</group>

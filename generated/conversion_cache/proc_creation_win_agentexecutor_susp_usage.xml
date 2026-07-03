@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100240" level="10">
+    <description>Suspicious AgentExecutor PowerShell Execution [Sigma converted]</description>
+  </rule>
+</group>

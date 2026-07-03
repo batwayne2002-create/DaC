@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100207" level="10">
+    <description>PUA - NPS Tunneling Tool Execution [Sigma converted]</description>
+  </rule>
+</group>

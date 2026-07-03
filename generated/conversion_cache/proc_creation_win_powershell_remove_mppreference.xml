@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100216" level="10">
+    <description>Tamper Windows Defender Remove-MpPreference [Sigma converted]</description>
+  </rule>
+</group>

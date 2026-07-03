@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100256" level="10">
+    <description>ImagingDevices Unusual Parent/Child Processes [Sigma converted]</description>
+  </rule>
+</group>

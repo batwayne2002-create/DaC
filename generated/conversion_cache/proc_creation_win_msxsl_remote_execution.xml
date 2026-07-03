@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100269" level="10">
+    <description>Remote XSL Execution Via Msxsl.EXE [Sigma converted]</description>
+  </rule>
+</group>

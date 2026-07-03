@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100273" level="10">
+    <description>PUA - Rclone Execution [Sigma converted]</description>
+  </rule>
+</group>

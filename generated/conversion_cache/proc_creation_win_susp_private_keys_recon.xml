@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100245" level="5">
+    <description>Private Keys Reconnaissance Via CommandLine Tools [Sigma converted]</description>
+  </rule>
+</group>

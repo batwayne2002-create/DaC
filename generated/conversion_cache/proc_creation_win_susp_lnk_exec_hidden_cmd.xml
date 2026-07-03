@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100209" level="10">
+    <description>Suspicious LNK Command-Line Padding with Whitespace Characters [Sigma converted]</description>
+  </rule>
+</group>

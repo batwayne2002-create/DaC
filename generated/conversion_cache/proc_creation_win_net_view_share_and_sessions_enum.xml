@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100284" level="3">
+    <description>Share And Session Enumeration Using Net.EXE [Sigma converted]</description>
+  </rule>
+</group>

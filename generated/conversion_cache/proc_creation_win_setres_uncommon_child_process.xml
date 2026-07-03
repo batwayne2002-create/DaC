@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100210" level="10">
+    <description>Uncommon Child Process Of Setres.EXE [Sigma converted]</description>
+  </rule>
+</group>

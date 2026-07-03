@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100209" level="5">
+    <description>New Root Certificate Installed Via CertMgr.EXE [Sigma converted]</description>
+  </rule>
+</group>

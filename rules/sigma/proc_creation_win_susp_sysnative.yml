@@ -1,0 +1,40 @@
+author: Max Altgelt (Nextron Systems)
+custom:
+  wazuh_rule_id: 200193
+date: 2022-08-23
+description: Detects process creation events that use the Sysnative folder (common
+  for CobaltStrike spawns)
+detection:
+  condition: selection and not 1 of filter_main_* and not 1 of filter_optional_*
+  filter_main_ngen:
+    CommandLine|contains: install
+    Image|contains:
+    - C:\Windows\Microsoft.NET\Framework64\v
+    - C:\Windows\Microsoft.NET\Framework\v
+    - C:\Windows\Microsoft.NET\FrameworkArm\v
+    - C:\Windows\Microsoft.NET\FrameworkArm64\v
+    Image|endswith: \ngen.exe
+  filter_optional_xampp:
+    CommandLine|contains|all:
+    - '"C:\Windows\sysnative\cmd.exe"'
+    - \xampp\
+    - \catalina_start.bat
+  selection:
+  - CommandLine|contains: :\Windows\Sysnative\
+  - Image|contains: :\Windows\Sysnative\
+falsepositives:
+- Unknown
+id: 3c1b5fb0-c72f-45ba-abd1-4d4c353144ab
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-08
+references:
+- https://thedfirreport.com/2021/08/29/cobalt-strike-a-defenders-guide/
+status: test
+tags:
+- attack.privilege-escalation
+- attack.stealth
+- attack.t1055
+title: Process Creation Using Sysnative Folder

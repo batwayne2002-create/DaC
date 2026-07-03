@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100287" level="10">
+    <description>Bad Opsec Defaults Sacrificial Processes With Improper Arguments [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100275" level="10">
+    <description>Dllhost.EXE Execution Anomaly [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100224" level="10">
+    <description>Suspicious Reg Add BitLocker [Sigma converted]</description>
+  </rule>
+</group>

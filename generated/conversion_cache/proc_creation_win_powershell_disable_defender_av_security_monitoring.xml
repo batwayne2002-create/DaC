@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100213" level="10">
+    <description>Disable Windows Defender AV Security Monitoring [Sigma converted]</description>
+  </rule>
+</group>

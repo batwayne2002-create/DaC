@@ -1,0 +1,29 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 201030
+date: 2022-08-02
+description: Detects execution of VMware Xfer utility (VMwareXferlogs.exe) from the
+  non-default directory which may be an attempt to sideload arbitrary DLL
+detection:
+  condition: selection and not filter
+  filter:
+    Image|startswith: C:\Program Files\VMware\
+  selection:
+    Image|endswith: \VMwareXferlogs.exe
+falsepositives:
+- Unlikely
+id: ebea773c-a8f1-42ad-a856-00cb221966e8
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://www.sentinelone.com/labs/lockbit-ransomware-side-loads-cobalt-strike-beacon-with-legitimate-vmware-utility/
+status: test
+tags:
+- attack.privilege-escalation
+- attack.persistence
+- attack.execution
+- attack.stealth
+- attack.t1574.001
+title: DLL Sideloading by VMware Xfer Utility

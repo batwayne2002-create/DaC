@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100216" level="5">
+    <description>Use of TTDInject.exe [Sigma converted]</description>
+  </rule>
+</group>

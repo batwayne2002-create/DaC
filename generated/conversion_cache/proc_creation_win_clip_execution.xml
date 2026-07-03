@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100254" level="3">
+    <description>Data Copied To Clipboard Via Clip.EXE [Sigma converted]</description>
+  </rule>
+</group>

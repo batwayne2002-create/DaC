@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100276" level="10">
+    <description>Potential PowerShell Execution Policy Tampering - ProcCreation [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,46 @@
+author: Florian Roth (Nextron Systems)
+custom:
+  wazuh_rule_id: 200560
+date: 2022-01-20
+description: Detects the execution of AdvancedRun utility in the context of the TrustedInstaller,
+  SYSTEM, Local Service or Network Service accounts
+detection:
+  condition: all of selection*
+  selection:
+    CommandLine|contains:
+    - /EXEFilename
+    - /CommandLine
+  selection_runas:
+  - CommandLine|contains:
+    - ' /RunAs 8 '
+    - ' /RunAs 4 '
+    - ' /RunAs 10 '
+    - ' /RunAs 11 '
+  - CommandLine|endswith:
+    - /RunAs 8
+    - /RunAs 4
+    - /RunAs 10
+    - /RunAs 11
+falsepositives:
+- Unknown
+id: fa00b701-44c6-4679-994d-5a18afa8a707
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2023-02-21
+references:
+- https://twitter.com/splinter_code/status/1483815103279603714
+- https://medium.com/s2wblog/analysis-of-destructive-malware-whispergate-targeting-ukraine-9d5d158f19f3
+- https://www.elastic.co/security-labs/operation-bleeding-bear
+- https://www.winhelponline.com/blog/run-program-as-system-localsystem-account-windows/
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_pua_advancedrun_priv_user/info.yml
+related:
+- id: d2b749ee-4225-417e-b20e-a8d2193cbb84
+  type: similar
+status: test
+tags:
+- attack.privilege-escalation
+- attack.stealth
+- attack.t1134.002
+title: PUA - AdvancedRun Suspicious Execution

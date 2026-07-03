@@ -1,0 +1,50 @@
+author: frack113, The DFIR Report
+custom:
+  wazuh_rule_id: 200984
+date: 2022-03-02
+description: 'Detects the modification of NTFS symbolic link behavior using fsutil,
+  which could be used to enable remote to local or remote to remote symlinks for potential
+  attacks.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_fsutil_cli:
+    CommandLine|contains|all:
+    - fsutil
+    - behavior
+    - set
+    - SymlinkEvaluation
+  selection_img_proxy:
+  - Image|endswith:
+    - \cmd.exe
+    - \powershell.exe
+    - \pwsh.exe
+  - OriginalFileName:
+    - Cmd.Exe
+    - PowerShell.EXE
+    - pwsh.dll
+  selection_symlink_params:
+    CommandLine|contains:
+    - R2L:1
+    - R2R:1
+    - L2L:1
+falsepositives:
+- Legitimate usage, investigate the parent process and context to determine if benign.
+id: c0b2768a-dd06-4671-8339-b16ca8d1f27f
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-11-13
+references:
+- https://www.cybereason.com/blog/cybereason-vs.-blackcat-ransomware
+- https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/fsutil-behavior
+- https://thedfirreport.com/2025/06/30/hide-your-rdp-password-spray-leads-to-ransomhub-deployment/
+status: test
+tags:
+- attack.execution
+- attack.defense-impairment
+- attack.t1059
+- attack.t1222.001
+title: Potentially Suspicious NTFS Symlink Behavior Modification

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100219" level="3">
+    <description>Firewall Configuration Discovery Via Netsh.EXE [Sigma converted]</description>
+  </rule>
+</group>

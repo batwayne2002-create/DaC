@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="3">
+    <description>Browser Execution In Headless Mode [Sigma converted]</description>
+  </rule>
+</group>

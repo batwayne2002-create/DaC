@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100231" level="10">
+    <description>UAC Bypass Using Event Viewer RecentViews [Sigma converted]</description>
+  </rule>
+</group>

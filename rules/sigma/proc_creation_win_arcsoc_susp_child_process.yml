@@ -1,0 +1,49 @@
+author: Micah Babinski
+custom:
+  wazuh_rule_id: 201170
+date: 2025-11-25
+description: 'Detects script interpreters, command-line tools, and similar suspicious
+  child processes of ArcSOC.exe.
+
+  ArcSOC.exe is the process name which hosts ArcGIS Server REST services. If an attacker
+  compromises an ArcGIS
+
+  Server system and uploads a malicious Server Object Extension (SOE), they can send
+  crafted requests to the corresponding
+
+  service endpoint and remotely execute code from the ArcSOC.exe process.
+
+  '
+detection:
+  condition: selection and not 1 of filter_main_*
+  filter_main_cmd:
+    CommandLine: cmd.exe /c "ver"
+    Image|endswith: \cmd.exe
+  selection:
+    Image|endswith:
+    - \cmd.exe
+    - \cscript.exe
+    - \mshta.exe
+    - \powershell.exe
+    - \pwsh.exe
+    - \regsvr32.exe
+    - \rundll32.exe
+    - \wmic.exe
+    - \wscript.exe
+    ParentImage|endswith: \ArcSOC.exe
+falsepositives:
+- Unknown
+id: 8e95e73e-ba02-4a87-b4d7-0929b8053038
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://reliaquest.com/blog/threat-spotlight-inside-flax-typhoons-arcgis-compromise/
+- https://enterprise.arcgis.com/en/server/12.0/administer/windows/inside-an-arcgis-server-site.htm
+status: experimental
+tags:
+- attack.execution
+- attack.t1059
+- attack.t1203
+title: Suspicious ArcSOC.exe Child Process

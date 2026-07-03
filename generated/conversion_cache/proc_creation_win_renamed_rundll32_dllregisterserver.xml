@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100265" level="10">
+    <description>Potential Renamed Rundll32 Execution [Sigma converted]</description>
+  </rule>
+</group>

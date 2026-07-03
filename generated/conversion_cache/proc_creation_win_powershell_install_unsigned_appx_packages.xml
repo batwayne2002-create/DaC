@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100235" level="5">
+    <description>Unsigned AppX Installation Attempt Using Add-AppxPackage [Sigma converted]</description>
+  </rule>
+</group>

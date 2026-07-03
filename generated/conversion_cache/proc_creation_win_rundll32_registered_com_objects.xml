@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100259" level="10">
+    <description>Rundll32 Registered COM Objects [Sigma converted]</description>
+  </rule>
+</group>

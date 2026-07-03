@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100288" level="10">
+    <description>Use of W32tm as Timer [Sigma converted]</description>
+  </rule>
+</group>

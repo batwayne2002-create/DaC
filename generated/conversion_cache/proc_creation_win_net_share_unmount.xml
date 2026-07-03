@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100212" level="3">
+    <description>Unmount Share Via Net.EXE [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,50 @@
+author: frack113
+custom:
+  wazuh_rule_id: 200036
+date: 2022-01-01
+description: 'Detects the execution of "wmic" with the "process" flag, which might
+  indicate an attempt to perform reconnaissance on running processes.
+
+  Adversaries may use wmic to query for running processes and their details as part
+  of their reconnaissance efforts.
+
+  '
+detection:
+  condition: all of selection* and not 1 of filter_main_*
+  filter_main_creation:
+    CommandLine|contains|all:
+    - call
+    - create
+  filter_main_terminate:
+    CommandLine|contains|all:
+    - call
+    - terminate
+  selection_cli:
+    CommandLine|contains: process
+  selection_img:
+  - Image|endswith: \WMIC.exe
+  - OriginalFileName: wmic.exe
+falsepositives:
+- Unknown
+id: 221b251a-357a-49a9-920a-271802777cc0
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-12-15
+references:
+- https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1047/T1047.md
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_wmic_recon_process/info.yml
+simulation:
+- atomic_guid: 5750aa16-0e59-4410-8b9a-8a47ca2788e2
+  name: WMI Reconnaissance Processes
+  technique: T1047
+  type: atomic-red-team
+status: test
+tags:
+- attack.execution
+- attack.t1047
+- attack.discovery
+- attack.t1057
+title: Potential Process Reconnaissance via Wmic.EXE

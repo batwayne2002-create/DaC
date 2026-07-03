@@ -1,0 +1,30 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200935
+date: 2025-07-01
+description: 'Detects usage of HollowReaper, a process hollowing shellcode launcher
+  used for stealth payload execution through process hollowing.
+
+  It replaces the memory of a legitimate process with custom shellcode, allowing the
+  attacker to execute payloads under the guise of trusted binaries.
+
+  '
+detection:
+  condition: selection
+  selection:
+    Image|endswith: \HollowReaper.exe
+falsepositives:
+- Unknown
+id: 85d23b42-9a9d-4f8f-b3d7-d2733c1d58f5
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://github.com/vari-sh/RedTeamGrimoire/tree/b5e7635d34db6e1f0398d8847e8f293186e947c5/HollowReaper
+status: experimental
+tags:
+- attack.privilege-escalation
+- attack.stealth
+- attack.t1055.012
+title: HackTool - HollowReaper Execution

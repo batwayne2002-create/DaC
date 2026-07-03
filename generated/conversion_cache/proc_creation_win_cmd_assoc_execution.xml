@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100207" level="3">
+    <description>Change Default File Association Via Assoc [Sigma converted]</description>
+  </rule>
+</group>

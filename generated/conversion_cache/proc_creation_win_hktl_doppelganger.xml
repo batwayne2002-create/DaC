@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100277" level="10">
+    <description>HackTool - Doppelanger LSASS Dumper Execution [Sigma converted]</description>
+  </rule>
+</group>

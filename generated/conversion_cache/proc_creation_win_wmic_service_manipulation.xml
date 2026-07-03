@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100214" level="5">
+    <description>Service Started/Stopped Via Wmic.EXE [Sigma converted]</description>
+  </rule>
+</group>

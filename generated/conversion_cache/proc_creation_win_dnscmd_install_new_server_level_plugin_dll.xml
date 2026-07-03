@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100219" level="10">
+    <description>New DNS ServerLevelPluginDll Installed Via Dnscmd.EXE [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100249" level="10">
+    <description>HackTool - Hashcat Password Cracker Execution [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100266" level="3">
+    <description>System Information Discovery via Registry Queries [Sigma converted]</description>
+  </rule>
+</group>

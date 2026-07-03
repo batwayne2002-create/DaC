@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="10">
+    <description>Wab Execution From Non Default Location [Sigma converted]</description>
+  </rule>
+</group>

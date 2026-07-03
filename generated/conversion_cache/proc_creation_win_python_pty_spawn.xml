@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100210" level="10">
+    <description>Python Spawning Pretty TTY on Windows [Sigma converted]</description>
+  </rule>
+</group>

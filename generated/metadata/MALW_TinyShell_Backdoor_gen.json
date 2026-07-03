@@ -1,0 +1,25 @@
+{
+  "rule_name": "MALW_TinyShell_Backdoor_gen.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "6e26c97f3539a532450c09d8b69b85d1aebfb342a6edcfdae3fe63b37e4f4fd0",
+  "validation_status": "failed",
+  "validation_errors": [
+    "error: rule \"MALW_TinyShell_backconnect_ELF\" in /tmp/tmp3rckpr2h.yar(102): undefined identifier \"is__elf\"",
+    "error: rule \"MALW_TinyShell_backconnect_Gen\" in /tmp/tmp3rckpr2h.yar(115): undefined identifier \"is__elf\"",
+    "error: rule \"MALW_TinyShell_backdoor_Gen\" in /tmp/tmp3rckpr2h.yar(126): undefined identifier \"is__elf\""
+  ],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.439606+00:00"
+}

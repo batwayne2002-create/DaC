@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100230" level="10">
+    <description>Suspicious Child Process Of BgInfo.EXE [Sigma converted]</description>
+  </rule>
+</group>

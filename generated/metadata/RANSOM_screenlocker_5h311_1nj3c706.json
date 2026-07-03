@@ -1,0 +1,21 @@
+{
+  "rule_name": "RANSOM_screenlocker_5h311_1nj3c706.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "2a7097b2f77e40d0e096828c3a6b3414725cd9d3b13ba8f3c4e31c7f23ec9360",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.046509+00:00"
+}

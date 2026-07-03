@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100216" level="10">
+    <description>Potential Mpclient.DLL Sideloading Via Defender Binaries [Sigma converted]</description>
+  </rule>
+</group>

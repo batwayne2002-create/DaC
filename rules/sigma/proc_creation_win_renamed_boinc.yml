@@ -1,0 +1,27 @@
+author: Matt Anderson (Huntress)
+custom:
+  wazuh_rule_id: 200419
+date: 2024-07-23
+description: Detects the execution of a renamed BOINC binary.
+detection:
+  condition: selection and not 1 of filter_main_*
+  filter_main_legit_name:
+    Image|endswith: \BOINC.exe
+  selection:
+    OriginalFileName: BOINC.exe
+falsepositives:
+- Unknown
+id: 30d07da2-83ab-45d8-ae75-ec7c0edcaffc
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://boinc.berkeley.edu/
+- https://www.virustotal.com/gui/file/91e405e8a527023fb8696624e70498ae83660fe6757cef4871ce9bcc659264d3/details
+- https://www.huntress.com/blog/fake-browser-updates-lead-to-boinc-volunteer-computing-software
+status: test
+tags:
+- attack.defense-impairment
+- attack.t1553
+title: Renamed BOINC Client Execution

@@ -1,0 +1,33 @@
+author: The DFIR Report
+custom:
+  wazuh_rule_id: 200707
+date: 2025-02-21
+description: Detects the execution of Notepad to open a file that has the string "password"
+  which may indicate unauthorized access to credentials or suspicious activity.
+detection:
+  condition: selection
+  selection:
+    CommandLine|endswith:
+    - password*.txt
+    - password*.csv
+    - password*.doc
+    - password*.xls
+    Image|endswith: \notepad.exe
+    ParentImage|endswith: \explorer.exe
+falsepositives:
+- Legitimate use of opening files from remote hosts by administrators or users. However,
+  storing passwords in text readable format could potentially be a violation of the
+  organization's policy. Any match should be investigated further.
+id: 3b4e950b-a3ea-44d3-877e-432071990709
+level: low
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://thedfirreport.com/2025/02/24/confluence-exploit-leads-to-lockbit-ransomware/
+- https://intel.thedfirreport.com/eventReports/view/57
+status: experimental
+tags:
+- attack.discovery
+- attack.t1083
+title: Notepad Password Files Discovery

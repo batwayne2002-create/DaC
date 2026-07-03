@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100243" level="5">
+    <description>Use NTFS Short Name in Image [Sigma converted]</description>
+  </rule>
+</group>

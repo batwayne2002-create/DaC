@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100298" level="10">
+    <description>Sysinternals PsSuspend Suspicious Execution [Sigma converted]</description>
+  </rule>
+</group>

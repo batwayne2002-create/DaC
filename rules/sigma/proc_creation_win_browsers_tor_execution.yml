@@ -1,0 +1,29 @@
+author: frack113
+custom:
+  wazuh_rule_id: 201135
+date: 2022-02-20
+description: Detects the use of Tor or Tor-Browser to connect to onion routing networks
+detection:
+  condition: selection
+  selection:
+  - Description: Tor Browser
+  - Product: Tor Browser
+  - Image|endswith:
+    - \tor.exe
+    - \Tor Browser\Browser\firefox.exe
+falsepositives:
+- Unknown
+id: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-27
+references:
+- https://www.logpoint.com/en/blog/detecting-tor-use-with-logpoint/
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_browsers_tor_execution/info.yml
+status: test
+tags:
+- attack.command-and-control
+- attack.t1090.003
+title: Tor Client/Browser Execution

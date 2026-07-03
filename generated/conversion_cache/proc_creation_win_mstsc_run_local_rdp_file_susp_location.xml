@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100289" level="10">
+    <description>Suspicious Mstsc.EXE Execution With Local RDP File [Sigma converted]</description>
+  </rule>
+</group>

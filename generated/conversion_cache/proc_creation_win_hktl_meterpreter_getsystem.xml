@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100260" level="10">
+    <description>Potential Meterpreter/CobaltStrike Activity [Sigma converted]</description>
+  </rule>
+</group>

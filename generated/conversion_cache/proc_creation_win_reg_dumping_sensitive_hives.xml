@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100235" level="10">
+    <description>Dumping of Sensitive Hives Via Reg.EXE [Sigma converted]</description>
+  </rule>
+</group>

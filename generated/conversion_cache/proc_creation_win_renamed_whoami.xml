@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100284" level="15">
+    <description>Renamed Whoami Execution [Sigma converted]</description>
+  </rule>
+</group>

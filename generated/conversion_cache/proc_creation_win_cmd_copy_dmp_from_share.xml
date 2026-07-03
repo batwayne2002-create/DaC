@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100223" level="10">
+    <description>Copy .DMP/.DUMP Files From Remote Share Via Cmd.EXE [Sigma converted]</description>
+  </rule>
+</group>

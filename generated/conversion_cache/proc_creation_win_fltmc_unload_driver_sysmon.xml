@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100229" level="10">
+    <description>Sysmon Driver Unloaded Via Fltmc.EXE [Sigma converted]</description>
+  </rule>
+</group>

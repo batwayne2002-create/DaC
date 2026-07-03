@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100286" level="10">
+    <description>Suspicious DumpMinitool Execution [Sigma converted]</description>
+  </rule>
+</group>

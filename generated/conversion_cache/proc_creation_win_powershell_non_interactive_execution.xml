@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100260" level="3">
+    <description>Non Interactive PowerShell Process Spawned [Sigma converted]</description>
+  </rule>
+</group>

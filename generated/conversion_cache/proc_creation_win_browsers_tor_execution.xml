@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100297" level="10">
+    <description>Tor Client/Browser Execution [Sigma converted]</description>
+  </rule>
+</group>

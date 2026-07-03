@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100290" level="10">
+    <description>Potential Signing Bypass Via Windows Developer Features [Sigma converted]</description>
+  </rule>
+</group>

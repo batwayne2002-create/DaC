@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100214" level="10">
+    <description>Whoami.EXE Execution From Privileged Process [Sigma converted]</description>
+  </rule>
+</group>

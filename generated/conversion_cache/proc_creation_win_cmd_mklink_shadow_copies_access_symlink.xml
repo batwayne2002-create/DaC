@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100247" level="10">
+    <description>VolumeShadowCopy Symlink Creation Via Mklink [Sigma converted]</description>
+  </rule>
+</group>

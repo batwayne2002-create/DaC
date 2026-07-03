@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="10">
+    <description>Audit Policy Tampering Via NT Resource Kit Auditpol [Sigma converted]</description>
+  </rule>
+</group>

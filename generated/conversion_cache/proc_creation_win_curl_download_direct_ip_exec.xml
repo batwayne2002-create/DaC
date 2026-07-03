@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100240" level="5">
+    <description>File Download From IP URL Via Curl.EXE [Sigma converted]</description>
+  </rule>
+</group>

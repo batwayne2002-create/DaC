@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100205" level="5">
+    <description>Potential Process Execution Proxy Via CL_Invocation.ps1 [Sigma converted]</description>
+  </rule>
+</group>

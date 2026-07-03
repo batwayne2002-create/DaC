@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100232" level="3">
+    <description>Remote Access Tool - Team Viewer Session Started On Windows Host [Sigma converted]</description>
+  </rule>
+</group>

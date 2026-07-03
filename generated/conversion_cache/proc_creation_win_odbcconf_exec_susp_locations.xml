@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100250" level="10">
+    <description>Odbcconf.EXE Suspicious DLL Location [Sigma converted]</description>
+  </rule>
+</group>

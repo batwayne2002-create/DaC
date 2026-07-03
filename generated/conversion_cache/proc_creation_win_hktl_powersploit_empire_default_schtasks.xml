@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100203" level="10">
+    <description>HackTool - Default PowerSploit/Empire Scheduled Task Creation [Sigma converted]</description>
+  </rule>
+</group>

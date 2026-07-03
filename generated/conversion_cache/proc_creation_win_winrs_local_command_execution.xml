@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100252" level="10">
+    <description>Winrs Local Command Execution [Sigma converted]</description>
+  </rule>
+</group>

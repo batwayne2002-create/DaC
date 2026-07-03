@@ -1,0 +1,51 @@
+author: frack113, Nasreddine Bencherchali (Nextron Systems), X__Junior
+custom:
+  wazuh_rule_id: 200337
+date: 2021-12-26
+description: Detects when adversaries stop services or processes by disabling their
+  respective scheduled tasks in order to conduct data destructive activities
+detection:
+  condition: all of selection_*
+  selection_cli_disable:
+    CommandLine|contains|windash: /disable
+  selection_cli_task:
+    CommandLine|contains:
+    - \Windows\BitLocker
+    - \Windows\ExploitGuard
+    - \Windows\ExploitGuard\ExploitGuard MDM policy Refresh
+    - \Windows\SystemRestore\SR
+    - \Windows\UpdateOrchestrator\
+    - \Windows\Windows Defender\
+    - \Windows\WindowsBackup\
+    - \Windows\WindowsUpdate\
+  selection_img:
+  - Image|endswith: \schtasks.exe
+  - OriginalFileName: schtasks.exe
+falsepositives:
+- Unknown
+id: 9ac94dc8-9042-493c-ba45-3b5e7c86b980
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2026-03-11
+references:
+- https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1490/T1490.md#atomic-test-8---windows---disable-the-sr-scheduled-task
+- https://twitter.com/MichalKoczwara/status/1553634816016498688
+- https://thedfirreport.com/2021/10/18/icedid-to-xinglocker-ransomware-in-24-hours/
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_schtasks_disable/info.yml
+related:
+- id: 7595ba94-cf3b-4471-aa03-4f6baa9e5fad
+  type: similar
+- id: 9e3cb244-bdb8-4632-8c90-6079c8f4f16d
+  type: similar
+simulation:
+- atomic_guid: 1c68c68d-83a4-4981-974e-8993055fa034
+  name: Windows - Disable the SR scheduled task
+  technique: T1490
+  type: atomic-red-team
+status: test
+tags:
+- attack.impact
+- attack.t1489
+title: Disable Important Scheduled Task

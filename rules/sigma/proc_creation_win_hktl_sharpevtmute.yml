@@ -1,0 +1,32 @@
+author: Florian Roth (Nextron Systems)
+custom:
+  wazuh_rule_id: 200892
+date: 2022-09-07
+description: Detects the use of SharpEvtHook, a tool that tampers with the Windows
+  event logs
+detection:
+  condition: selection
+  selection:
+  - Image|endswith: \SharpEvtMute.exe
+  - Description: SharpEvtMute
+  - CommandLine|contains:
+    - '--Filter "rule '
+    - --Encoded --Filter \"
+falsepositives:
+- Unknown
+id: bedfc8ad-d1c7-4e37-a20e-e2b0dbee759c
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2023-02-14
+references:
+- https://github.com/bats3c/EvtMute
+related:
+- id: 49329257-089d-46e6-af37-4afce4290685
+  type: similar
+status: test
+tags:
+- attack.defense-impairment
+- attack.t1685.001
+title: HackTool - SharpEvtMute Execution

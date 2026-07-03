@@ -1,0 +1,39 @@
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+custom:
+  wazuh_rule_id: 200506
+date: 2025-09-25
+description: 'Detects deletion of the RunMRU registry key, which stores the history
+  of commands executed via the Run dialog.
+
+  In the clickfix techniques, the phishing lures instruct users to open a run dialog
+  through (Win + R) and execute malicious commands.
+
+  Adversaries may delete this key to cover their tracks after executing commands.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains|all:
+    - ' del'
+    - \Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+  selection_img:
+  - Image|endswith: \reg.exe
+  - OriginalFileName: reg.exe
+falsepositives:
+- Unknown
+id: c11aecef-9c37-45a6-9c07-bc0782f963fd
+level: high
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://www.zscaler.com/blogs/security-research/coldriver-updates-arsenal-baitswitch-and-simplefix
+related:
+- id: 3a9b8c1e-5b2e-4f7a-9d1c-2a7f3b6e1c55
+  type: similar
+status: experimental
+tags:
+- attack.stealth
+- attack.t1070.003
+title: RunMRU Registry Key Deletion

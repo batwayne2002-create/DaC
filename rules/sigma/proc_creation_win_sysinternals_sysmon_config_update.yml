@@ -1,0 +1,32 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200155
+date: 2023-03-09
+description: Detects updates to Sysmon's configuration. Attackers might update or
+  replace the Sysmon configuration with a bare bone one to avoid monitoring without
+  shutting down the service completely
+detection:
+  condition: all of selection_*
+  selection_cli:
+    CommandLine|contains|windash: -c
+  selection_pe:
+  - Image|endswith:
+    - \Sysmon64.exe
+    - \Sysmon64a.exe
+    - \Sysmon.exe
+  - Description: System activity monitor
+falsepositives:
+- Legitimate administrators might use this command to update Sysmon configuration.
+id: 87911521-7098-470b-a459-9a57fc80bdfd
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2026-06-29
+references:
+- https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+status: test
+tags:
+- attack.defense-impairment
+- attack.t1685
+title: Sysmon Configuration Update

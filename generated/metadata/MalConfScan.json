@@ -1,0 +1,23 @@
+{
+  "rule_name": "MalConfScan.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "855221990ced8ee45a334a877a0239cf66b889ebd2e53f9f11d8157113ea9955",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "warning: rule \"Ramnit\" in /tmp/tmp7dec4fxl.yar(244): string \"$xor_secret\" may slow down scanning"
+  ],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:30.282285+00:00"
+}

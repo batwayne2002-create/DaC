@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100298" level="10">
+    <description>Renamed ZOHO Dctask64 Execution [Sigma converted]</description>
+  </rule>
+</group>

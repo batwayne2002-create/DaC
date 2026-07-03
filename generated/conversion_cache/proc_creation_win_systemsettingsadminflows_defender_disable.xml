@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100233" level="10">
+    <description>Windows Defender Disabled Via SystemSettingsAdminFlows.EXE [Sigma converted]</description>
+  </rule>
+</group>

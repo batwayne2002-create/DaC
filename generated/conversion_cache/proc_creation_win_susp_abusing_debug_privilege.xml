@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100249" level="10">
+    <description>Abused Debug Privilege by Arbitrary Parent Processes [Sigma converted]</description>
+  </rule>
+</group>

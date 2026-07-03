@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100244" level="5">
+    <description>HackTool - Impersonate Execution [Sigma converted]</description>
+  </rule>
+</group>

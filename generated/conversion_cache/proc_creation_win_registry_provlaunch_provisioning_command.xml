@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100285" level="10">
+    <description>Potential Provisioning Registry Key Abuse For Binary Proxy Execution [Sigma converted]</description>
+  </rule>
+</group>

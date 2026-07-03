@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100239" level="10">
+    <description>UAC Bypass Using Windows Media Player - Process [Sigma converted]</description>
+  </rule>
+</group>

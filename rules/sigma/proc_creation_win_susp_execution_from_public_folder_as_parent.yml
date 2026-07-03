@@ -1,0 +1,51 @@
+author: Florian Roth (Nextron Systems), Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200246
+date: 2022-02-25
+description: 'Detects a potentially suspicious execution of a parent process located
+  in the "\Users\Public" folder executing a child process containing references to
+  shell or scripting binaries and commandlines.
+
+  '
+detection:
+  condition: all of selection_*
+  selection_child:
+  - Image|endswith:
+    - \bitsadmin.exe
+    - \certutil.exe
+    - \cmd.exe
+    - \cscript.exe
+    - \mshta.exe
+    - \powershell.exe
+    - \pwsh.exe
+    - \regsvr32.exe
+    - \rundll32.exe
+    - \wscript.exe
+  - CommandLine|contains:
+    - bitsadmin
+    - certutil
+    - cscript
+    - mshta
+    - powershell
+    - regsvr32
+    - rundll32
+    - wscript
+  selection_parent:
+    ParentImage|contains: :\Users\Public\
+falsepositives:
+- Unknown
+id: 69bd9b97-2be2-41b6-9816-fb08757a4d1a
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2024-07-12
+references:
+- https://redcanary.com/blog/blackbyte-ransomware/
+status: test
+tags:
+- attack.execution
+- attack.stealth
+- attack.t1564
+- attack.t1059
+title: Potentially Suspicious Execution From Parent Process In Public Folder

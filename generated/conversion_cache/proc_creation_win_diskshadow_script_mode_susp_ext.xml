@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100257" level="5">
+    <description>Diskshadow Script Mode - Uncommon Script Extension Execution [Sigma converted]</description>
+  </rule>
+</group>

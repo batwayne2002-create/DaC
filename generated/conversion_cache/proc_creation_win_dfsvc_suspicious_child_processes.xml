@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100202" level="5">
+    <description>Potentially Suspicious Child Process Of ClickOnce Application [Sigma converted]</description>
+  </rule>
+</group>

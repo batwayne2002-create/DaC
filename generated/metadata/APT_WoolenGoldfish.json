@@ -1,0 +1,21 @@
+{
+  "rule_name": "APT_WoolenGoldfish.yar",
+  "rule_type": "yara",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:Yara-Rules/rules@0f93570194a8",
+  "content_hash": "f6a43dbf0ccd917c83a650b9e0c1c907b6439b03f2ad53d3b41d7dc6fa08a6bc",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [],
+  "conversion_status": "none",
+  "conversion_target": null,
+  "tags": [
+    "source:github",
+    "repo:Yara-Rules/rules",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:08:31.307075+00:00"
+}

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100217" level="10">
+    <description>Potentially Suspicious Child Processes Spawned by ConHost [Sigma converted]</description>
+  </rule>
+</group>

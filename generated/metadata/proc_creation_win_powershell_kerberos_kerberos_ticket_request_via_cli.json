@@ -1,0 +1,24 @@
+{
+  "rule_name": "proc_creation_win_powershell_kerberos_kerberos_ticket_request_via_cli.yml",
+  "rule_type": "sigma",
+  "source": "MISP",
+  "event_id": 0,
+  "event_uuid": "github:SigmaHQ/sigma@941c27449146",
+  "content_hash": "a85bca86bb52ec3d9c14cf21ae528ddfad1063c62aef455e38579b14467128bf",
+  "validation_status": "passed",
+  "validation_errors": [],
+  "validation_warnings": [
+    "Parsing Sigma rules",
+    "Checking Sigma rules"
+  ],
+  "conversion_status": "converted",
+  "conversion_target": "wazuh",
+  "tags": [
+    "source:github",
+    "repo:SigmaHQ/sigma",
+    "external",
+    "unverified"
+  ],
+  "deployment_status": "pending",
+  "timestamp": "2026-07-03T05:05:19.382496+00:00"
+}

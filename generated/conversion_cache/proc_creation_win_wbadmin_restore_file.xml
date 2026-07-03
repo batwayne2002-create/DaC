@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100223" level="5">
+    <description>File Recovery From Backup Via Wbadmin.EXE [Sigma converted]</description>
+  </rule>
+</group>

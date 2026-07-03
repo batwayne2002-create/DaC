@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100282" level="5">
+    <description>Potentially Suspicious Windows App Activity [Sigma converted]</description>
+  </rule>
+</group>

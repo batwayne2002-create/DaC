@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100236" level="5">
+    <description>Renamed Remote Utilities RAT (RURAT) Execution [Sigma converted]</description>
+  </rule>
+</group>

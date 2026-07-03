@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100288" level="3">
+    <description>Suspicious Query of MachineGUID [Sigma converted]</description>
+  </rule>
+</group>

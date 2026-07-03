@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100210" level="10">
+    <description>HackTool - CrackMapExec PowerShell Obfuscation [Sigma converted]</description>
+  </rule>
+</group>

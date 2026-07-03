@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100297" level="5">
+    <description>DLL Loaded via CertOC.EXE [Sigma converted]</description>
+  </rule>
+</group>

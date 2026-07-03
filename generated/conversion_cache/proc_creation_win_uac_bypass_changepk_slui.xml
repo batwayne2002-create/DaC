@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100265" level="10">
+    <description>UAC Bypass Using ChangePK and SLUI [Sigma converted]</description>
+  </rule>
+</group>

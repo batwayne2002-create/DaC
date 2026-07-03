@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100289" level="10">
+    <description>DNS Exfiltration and Tunneling Tools Execution [Sigma converted]</description>
+  </rule>
+</group>

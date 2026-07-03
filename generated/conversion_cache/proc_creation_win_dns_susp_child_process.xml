@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100254" level="10">
+    <description>Unusual Child Process of dns.exe [Sigma converted]</description>
+  </rule>
+</group>

@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100266" level="10">
+    <description>Cab File Extraction Via Wusa.EXE From Potentially Suspicious Paths [Sigma converted]</description>
+  </rule>
+</group>

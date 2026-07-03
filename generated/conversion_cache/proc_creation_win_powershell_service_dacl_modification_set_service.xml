@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100234" level="10">
+    <description>Suspicious Service DACL Modification Via Set-Service Cmdlet [Sigma converted]</description>
+  </rule>
+</group>

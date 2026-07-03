@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100223" level="10">
+    <description>Potential RDP Tunneling Via SSH [Sigma converted]</description>
+  </rule>
+</group>

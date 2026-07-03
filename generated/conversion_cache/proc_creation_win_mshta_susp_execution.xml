@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100260" level="10">
+    <description>MSHTA Execution with Suspicious File Extensions [Sigma converted]</description>
+  </rule>
+</group>

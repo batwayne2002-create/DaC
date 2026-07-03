@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100291" level="10">
+    <description>Privilege Escalation via Named Pipe Impersonation [Sigma converted]</description>
+  </rule>
+</group>

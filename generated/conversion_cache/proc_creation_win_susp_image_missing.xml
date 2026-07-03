@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100284" level="10">
+    <description>Execution Of Non-Existing File [Sigma converted]</description>
+  </rule>
+</group>

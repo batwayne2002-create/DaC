@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100212" level="5">
+    <description>PUA - Advanced Port Scanner Execution [Sigma converted]</description>
+  </rule>
+</group>

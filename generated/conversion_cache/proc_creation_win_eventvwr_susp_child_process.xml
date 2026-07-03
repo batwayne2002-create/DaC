@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100256" level="10">
+    <description>Potentially Suspicious Event Viewer Child Process [Sigma converted]</description>
+  </rule>
+</group>

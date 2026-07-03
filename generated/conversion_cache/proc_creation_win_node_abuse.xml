@@ -1,0 +1,5 @@
+<group name="sigma,misp,">
+  <rule id="100250" level="10">
+    <description>Potential Arbitrary Code Execution Via Node.EXE [Sigma converted]</description>
+  </rule>
+</group>

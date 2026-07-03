@@ -1,0 +1,42 @@
+author: Nasreddine Bencherchali (Nextron Systems)
+custom:
+  wazuh_rule_id: 200353
+date: 2022-07-14
+description: Detects creation of a new service (kernel driver) with the type "kernel"
+detection:
+  condition: selection and not 1 of filter_optional_*
+  filter_optional_avira_driver:
+  - CommandLine|contains|all:
+    - create netprotection_network_filter
+    - 'type= kernel start= '
+    - binPath= System32\drivers\netprotection_network_filter
+    - DisplayName= netprotection_network_filter
+    - group= PNP_TDI tag= yes
+  - CommandLine|contains|all:
+    - create avelam binpath=C:\Windows\system32\drivers\avelam.sys
+    - type=kernel start=boot error=critical group=Early-Launch
+  selection:
+    CommandLine|contains:
+    - create
+    - config
+    CommandLine|contains|all:
+    - binPath
+    - type
+    - kernel
+    Image|endswith: \sc.exe
+falsepositives:
+- Rare legitimate installation of kernel drivers via sc.exe
+id: 431a1fdb-4799-4f3b-91c3-a683b003fc49
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2025-10-07
+references:
+- https://www.aon.com/cyber-solutions/aon_cyber_labs/yours-truly-signed-av-driver-weaponizing-an-antivirus-driver/
+status: test
+tags:
+- attack.persistence
+- attack.privilege-escalation
+- attack.t1543.003
+title: New Kernel Driver Via SC.EXE

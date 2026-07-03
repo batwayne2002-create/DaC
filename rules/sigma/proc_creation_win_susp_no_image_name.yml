@@ -1,0 +1,23 @@
+author: Matt Anderson (Huntress)
+custom:
+  wazuh_rule_id: 200225
+date: 2024-07-23
+description: Detect the use of processes with no name (".exe"), which can be used
+  to evade Image-based detections.
+detection:
+  condition: selection
+  selection:
+    Image|endswith: \.exe
+falsepositives:
+- Rare legitimate software.
+id: f208d6d8-d83a-4c2c-960d-877c37da84e5
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://www.huntress.com/blog/fake-browser-updates-lead-to-boinc-volunteer-computing-software
+status: test
+tags:
+- attack.stealth
+title: Process Launched Without Image Name

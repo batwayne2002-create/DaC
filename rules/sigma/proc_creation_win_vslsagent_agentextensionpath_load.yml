@@ -1,0 +1,27 @@
+author: bohops
+custom:
+  wazuh_rule_id: 200093
+date: 2022-10-30
+description: Detects Microsoft Visual Studio vsls-agent.exe lolbin execution with
+  a suspicious library load using the --agentExtensionPath parameter
+detection:
+  condition: selection and not filter
+  filter:
+    CommandLine|contains: Microsoft.VisualStudio.LiveShare.Agent.
+  selection:
+    CommandLine|contains: --agentExtensionPath
+    Image|endswith: \vsls-agent.exe
+falsepositives:
+- False positives depend on custom use of vsls-agent.exe
+id: 43103702-5886-11ed-9b6a-0242ac120002
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+references:
+- https://twitter.com/bohops/status/1583916360404729857
+status: test
+tags:
+- attack.stealth
+- attack.t1218
+title: Suspicious Vsls-Agent Command With AgentExtensionPath Load
